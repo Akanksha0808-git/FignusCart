@@ -1,0 +1,63 @@
+.Navupper{
+    width: 100%;
+    height: 40px;
+    position: sticky;
+    z-index: 10;
+    left: 0;
+    top: 0px;
+    /* width: 100%; */
+  /* background-image: url(https://w0.peakpx.com/wallpaper/158/57/HD-wallpaper-light-blue-rounds-blur-background-light-blue.jpg); */
+  background-repeat: no-repeat;
+background-size: cover;
+/* background-color: aqua; */
+}
+.Navupper img{
+    height: 40px;
+    width: 100%;
+}
+.left-message a{
+    position: absolute;
+    left: 39px;
+    top: 0;
+    color:black;
+    text-decoration: none;
+    animation: slide 2s infinite;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    line-height: 40px;
+    border: 0px !important;
+}
+@keyframes slide{
+    0% {
+        transform: translateY(40px);
+        opacity: 1;
+    }
+    5%, 50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    51% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    51.1%, 100% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+}
+@media (max-width: 1176px) {
+    .Navupper{
+        width: 100%;
+        background-color: aqua;
+    }
+
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 423px){
+.left-message{
+    font-size: 3px;
+    background-color: yellow;
+}
+}

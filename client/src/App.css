@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+    background-color: white;
+  }
+  .main_Contanier{
+    width: 100%;
+    background-color: #E3E6E6;
+  }
+  .card_render{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    margin-top: 30px;
+  }
+  @media screen and (max-width : 555px) {
+    .main_Contanier{
+      width: 100%;
+    }
+    .card_render{
+      width: 100%;
+    }
+  }

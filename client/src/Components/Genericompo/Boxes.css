@@ -1,0 +1,122 @@
+
+.productCard{
+    width: 300px;
+    min-width: auto;
+    min-height: 350px;
+    border-radius: 10px;
+    border: 1px solid rgba(168, 163, 163, 0.397);
+    position: relative;
+    padding: 4px 15px 0 15px;
+    transition: transform 0.3s ease;
+    background-color:white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0px;
+}
+.productCard:hover{
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 5px rgba(2, 2, 2, 0.5);
+    /* Increase the size on hover */
+}
+.product_img{
+    width: 90%;
+}
+.product_img img{
+    width: 100%;
+    height: 20vh;
+}
+.Card_Content{
+    width: 100%;
+    /* margin: 20px;
+    padding: 20px; */
+}
+.CardName{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+
+    margin: auto;
+}
+.CardName h4{
+    text-align: start;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #2f3640;
+}
+.product_rating{
+    line-height: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.product_rating span{
+    font-weight: 600;
+    color: #d63031;
+}
+.Sale_price{
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.Sale_price span{
+    font-weight: 600;
+    color: #2f3640;
+}
+.brand_price{
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.brand_price span{
+    font-weight: 600;
+    color: #2f3640;
+}
+.Card_Content button{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:  #E80071;
+    color: white;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -40px;
+    font-weight: 600;
+}
+.Card_Content button:hover{
+    color: rgba(0, 0, 0, 0.484);
+}
+
+@media screen and (max-width : 667px) {
+    .productCard{
+        width: 251px;
+    }
+    .Sale_price{
+        line-height: 15px;
+    }
+    .brand_price{
+        line-height: 15px;
+    }
+}
+@media screen and (max-width : 555px) {
+    .productCard{
+        width: 350px;
+        min-width: auto;
+        margin: auto;
+    }
+    .product_img{
+        width: 250px;
+    }
+}
+@media screen and (max-width : 383px){
+    .productCard{
+        width: 90%;
+    }
+} 
