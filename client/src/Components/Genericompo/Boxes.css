@@ -2,7 +2,7 @@
 .productCard{
     width: 300px;
     min-width: auto;
-    min-height: 350px;
+    min-height: 370px;
     border-radius: 10px;
     border: 1px solid rgba(168, 163, 163, 0.397);
     position: relative;
@@ -87,7 +87,7 @@
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    bottom: -40px;
+    bottom: -18px;
     font-weight: 600;
 }
 .Card_Content button:hover{

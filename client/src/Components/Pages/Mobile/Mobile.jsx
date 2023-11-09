@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom';
 import Footer from '../../Genericompo/Footer';
+import Boxes from '../../Genericompo/Boxes';
+import { Store } from '../../ContextAPI/DataStore';
+import Carousel3 from '../../Carousels/Carousel3';
+import "../../../App.css"
 const Mobile = () => {
+  const [Data] = useContext(Store);
+
   return (
     <div  style={{position:"relative",top:"50px"}}>
 
@@ -40,12 +46,50 @@ const Mobile = () => {
 
        
       </div>
-<br></br>
+
+<Carousel3/>
 
 
-      <h2>Mobiles</h2>
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/CatPage/JUPITER/Phase3/Header/Header_1500x300_01.gif" alt="" style={{width:"100%",height:"300px"}} />
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Madhav/Jupiter/Apple/P3R2/Mob_1242x300_2.jpg" alt="" style={{width:"100%",height:"300px"}} />
+<br />
+<h1 style={{textAlign:"center",fontWeight:"600",backgroundColor:"yellow"}}
+>Trending Now!!! Hurry</h1>
+      <div className="main_Container">
+        <div className="card_render">
+          {
+         Data && Data.filter((data) => data.category==="Mobile" && data.id<=4).map((item ,index) => {
+            return (
+              <Boxes key={index}
+              image = {item.image}
+              id = {item.id}
+              heading = {item.heading}
+              rating = {item.rating}
+              priceDrop = {item.PriceDrop}
+              price = {item.price}
+              category = {item.category}
+              />
+            );
+          })}
+        </div>
+        </div>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/CatPage/JUPITER/Phase3/Header/Header_1500x300_01.gif" alt="" style={{width:"100%",height:"300px"}} />
+        <div className="main_Container">
+        <div className="card_render">
+          {
+         Data && Data.filter((data) => data.category==="Mobile" && data.id>=13).map((item ,index) => {
+            return (
+              <Boxes key={index}
+              image = {item.image}
+              id = {item.id}
+              heading = {item.heading}
+              rating = {item.rating}
+              priceDrop = {item.PriceDrop}
+              price = {item.price}
+              category = {item.category}
+              />
+            );
+          })}
+        </div>
+        </div>
      <Footer/>
     </div>
   )
