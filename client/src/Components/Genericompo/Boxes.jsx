@@ -5,7 +5,7 @@ import "./Boxes.css"
 const Boxes = (props) => {
   const { heading,id,category,rating,priceDrop,price, image } = props;
   return (
-    <Link to={"/detailpage/" + id  } state={{ articleID: id, Category: category }} style={{ textDecoration: 'none' }}>
+    <Link to={"/detailpage/" + id + heading } state={{ articleID: id, Category: category }} style={{ textDecoration: 'none' }}>
     <div className="box">
     <div className="productCard">
 
@@ -23,7 +23,7 @@ const Boxes = (props) => {
         <br />
         <p className='brand_price'>MRP : <span>{price}</span></p>
       </div>
-        <Link to="/detailpage/${id}">
+        <Link to="/detailpage/${id}/${category}">
         <button onClick={()=>window.scroll(0,0)}>Add to Cart</button>
         </Link>
     </div>

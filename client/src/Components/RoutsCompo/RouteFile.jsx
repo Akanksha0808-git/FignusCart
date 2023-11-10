@@ -49,11 +49,10 @@ const RouteFile = () => {
      <Route path="/beauty/jwellery"  element={<Jwellery/>} />
      <Route path="/beauty/handbag"  element={<Handbags/>} />
      <Route path="/beauty/perfumes"  element={<Perfumes/>} />
-     {/* <Route path="/products/:id/:name" element={<DetailPage/>}/> */}
      <Route path="/detailpage/:id" element={<DetailPage/>}/>
-     {/* <Route path={"/login"} element={<Login/>}/> */}
-          {/* <Route path={"/Signup"} element={<Register/>}/> */}
-          {/* <Route path="/order" element={<Order />} /> */}
+     <Route path={"/login"} element={<Login/>}/>
+          <Route path={"/register"} element={<Register/>}/>
+          <Route path="/order" element={<Order />} />
    </Routes>
  </BrowserRouter>
     </div>

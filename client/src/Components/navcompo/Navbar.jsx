@@ -86,7 +86,7 @@ const Navbar = () => {
     <Searchbar/>
       
       </div>
-      <img srcSet="https://images-static.nykaa.com/uploads/6d302523-73a6-4cd3-aaa7-9e5e6aade7c8.jpg?tr=w-1200,cm-pad_resize" alt="" className='saleimg' style={{height:"30px",position:"relative",top:"20px"}} />
+      <img srcSet="https://images-static.nykaa.com/uploads/6d302523-73a6-4cd3-aaa7-9e5e6aade7c8.jpg?tr=w-1200,cm-pad_resize"  alt="" className='saleimg' style={{height:"30px",position:"relative",top:"20px"}} />
       
     </div>
   );

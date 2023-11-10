@@ -4,6 +4,8 @@ import axios from "axios"
 import "./Compo.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; // Import the specific icons you nee
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
@@ -27,7 +29,7 @@ function Login() {
 
     console.log(formData);
     //axios.post("url",inputs) to send the data to the backend server
-    axios.post(`https://handson-4-node.onrender.com/api/login`, formData)
+    axios.post(`http://localhost:7000/login`, formData)
       .then((res) => {
         console.log(res.data);
         setServer(res.data);

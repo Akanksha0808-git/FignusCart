@@ -70,39 +70,34 @@ function Order() {
 
 
   //-------------- Paymen Intigration --------------------------
-  const makepayment = async () => {
-    const stripe = await loadStripe(
-      "pk_test_51NCPAYSItp4zxD80Sgt6IQMetdOUyh3Kvs17Thauj56i1IyWYBn2u8byDboYRfA3k9VTPW0qMaYcCif9QtFd3AZQ00rCEMQsVX"
-    );
+  // const makepayment = async () => {
+  //   const stripe = await loadStripe(
+  //     "pk_test_51NCPAYSItp4zxD80Sgt6IQMetdOUyh3Kvs17Thauj56i1IyWYBn2u8byDboYRfA3k9VTPW0qMaYcCif9QtFd3AZQ00rCEMQsVX"
+  //   );
 
-    const body = {
-      products: cart3,
-    };
-    const headers = {
-      "Content-Type": "application/json",
-    };
-    const response = await fetch(
-      "https://e-shop-api-kmrr.onrender.com/api/create-checkout-session",
-      {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(body),
-      }
-    );
-    const session = await response.json();
-    const result = stripe.redirectToCheckout({
-      sessionId: session.id,
-    });
-    if (result.error) {
-      console.log(result.error);
-    }
-  };
-
-
-
-
-
-  return (
+  //   const body = {
+  //     products: cart3,
+  //   };
+  //   const headers = {
+  //     "Content-Type": "application/json",
+  //   };
+  //   const response = await fetch(
+  //     "https://e-shop-api-kmrr.onrender.com/api/create-checkout-session",
+  //     {
+  //       method: "POST",
+  //       headers: headers,
+  //       body: JSON.stringify(body),
+  //     }
+  //   );
+  //   const session = await response.json();
+  //   const result = stripe.redirectToCheckout({
+  //     sessionId: session.id,
+  //   });
+  //   if (result.error) {
+  //     console.log(result.error);
+  //   }
+  // };
+return (
     <div className="Order_Container">
 
       <div className="OderProduct">
@@ -116,7 +111,7 @@ function Order() {
         {filteredItems && filteredItems.length > 0 ? (
           filteredItems.map((item, index) => (
 
-          <div key={index} className="container">
+          <div key={index} className="containerr">
             {/* Order Image */}
               <div className="first-cont">
                 <img src={item.image} alt="click here" height={"200px"} />

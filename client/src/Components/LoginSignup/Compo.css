@@ -107,3 +107,126 @@
   
     
      */
+
+     .auth-container {
+      background-image: url(https://tailwindcomponents.com/gradient-generator/assets/header.a6837f08.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .text {
+      margin-left: 20px;
+    }
+    
+    .registerlink {
+      margin-left: 10px; /* Adjusted for better responsiveness */
+    }
+    
+    .logintxt {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 20px; /* Adjusted for better responsiveness */
+      margin-left: 10px; /* Adjusted for better responsiveness */
+    }
+    
+    h3,
+    h1 {
+      color: #ffff;
+    }
+    
+    .intro-text {
+      background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20200630/ourmid/pngtree-blue-linear-gradient-background-image_343453.jpg);
+      height: 310px;
+      width: 100%; /* Adjusted for better responsiveness */
+    }
+    
+    .formContainer {
+      width: 80%; /* Adjusted for better responsiveness */
+      background: rgba(255, 255, 255, 0.35);
+      box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(9.5px);
+      -webkit-backdrop-filter: blur(9.5px);
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+    }
+    
+    .formContainer div {
+      margin: 10px; /* Adjusted for better responsiveness */
+    }
+    
+    .formContainer div label {
+      display: inline-block;
+      width: 100%; /* Adjusted for better responsiveness */
+      font-size: 18px; /* Adjusted for better responsiveness */
+    }
+    
+    .formContainer div input {
+      height: 40px;
+      font-size: 16px;
+      border-radius: 5px;
+      width: 100%;
+      border: 1px solid #9e9e9ec0;
+    }
+    
+    .btn-submit {
+      font-size: 16px;
+      background: transparent;
+      border: 2px solid white;
+      margin-top: 10px;
+      border-radius: 20px;
+      position: relative;
+      color: #f0f0f0;
+      cursor: pointer;
+      z-index: 1;
+      padding: 10px 20px;
+      transition: color 0.3s ease;
+    }
+    
+    .btn-submit:hover {
+      color: black;
+      background-color: rgba(70, 221, 219, 0.388);
+    }
+    
+    .password-input {
+      position: relative;
+    }
+    
+    .password-toggle-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    
+    .password-toggle-icon.visible {
+      color: #007bff;
+    }
+    
+    .password-toggle-icon.hidden {
+      color: #ccc;
+    }
+    
+    @media (max-width: 768px) {
+      .formContainer {
+        width: 90%; /* Adjusted for better responsiveness on smaller screens */
+      }
+    
+      .logintxt {
+        font-size: 16px; /* Adjusted for better responsiveness on smaller screens */
+        margin-left: 0; /* Removed margin for better responsiveness on smaller screens */
+      }
+    
+      .registerlink {
+        margin-left: 0; /* Removed margin for better responsiveness on smaller screens */
+      }
+    }
+    
