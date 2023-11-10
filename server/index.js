@@ -1,7 +1,7 @@
 const express = require('express');
 const connection=require("./config/db")
 const cors = require("cors");
-const PORT=7000;
+const PORT=4000;
 const Route=require("./Routes/RoutesCompo")
 
 const app = express();
@@ -9,6 +9,9 @@ const app = express();
 // Corspolicy used here 
 app.use(cors({
     origin : "*"
+    // origin: "http://localhost:5173", // Update this to match your client's origin
+    // methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    // credentials: true,
 }))
 // body parser used here
 app.use(express.json());

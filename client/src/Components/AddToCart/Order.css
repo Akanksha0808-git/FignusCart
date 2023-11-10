@@ -139,10 +139,19 @@
     font-weight: 500;
   }
   
+  
   table td, tfoot, th, thead, tr{
     padding: 0px 20px 0 20px;
   }
-  
+  .no-items-message {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .no-items-message img{
+    height:360px ;
+  }
   @media screen and (max-width: 815px) {
     .OderProduct{
       width: 90vw;

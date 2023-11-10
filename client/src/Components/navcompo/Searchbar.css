@@ -1,99 +1,135 @@
 /* search box styling */
-.parentbox{
-    /* background-color: yellow; */
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+.parentbox {
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
-.searchbox{
-    position: relative;
-    margin-top: 48px;
- 
- 
-  }
-  .serachicon{
-    color: gray;
-    position: absolute;
-      top:5px;
-       left: 240px;
-       cursor: pointer;
-       border: 2px sild gray;
-  }
-  
-  .search{
-    height: 25px;
-    width: 260px;
-    /* border-radius: 20px; */
-  }
+
+.searchbox {
+  position: relative;
+  margin-top: 48px;
+
+
+}
+
+.serachicon {
+  color: gray;
+  position: absolute;
+  top: 5px;
+  left: 240px;
+  cursor: pointer;
+  border: 2px sild gray;
+}
+
+.search {
+  height: 25px;
+  width: 260px;
+  /* border-radius: 20px; */
+}
 
 /* sign in button */
-.btn{
+.btn {
 
- height: 50px;
- width: 70px;
- margin-top: 35px;
- margin-right: 10%;
- /* position: relative; */
-    /* margin: 0; */
-    border: none;
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    overflow: hidden;
-    background: none;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 8px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    background-color: #E80071;
-    color: #ffffff;
+  height: 50px;
+  width: 70px;
+  /* margin-top: 35px; */
+  /* margin-right: 10%; */
+
+  border: none;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: #E80071;
+  color: #ffffff;
 }
-.cart{
-    color:#E80071
+
+.btn:hover {
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.34);
 }
-.carto{
+
+.cart {
+  color: #E80071
+}
+
+.carto {
   /* position: relative; */
   font-size: 30px;
   /* top: 20px; */
   right: 120px;
-  color:gray;
+  color: gray;
 }
-@media (max-width: 1176px)
-{
-   .parentbox{
+
+.Sign_In {}
+
+.searchbox {
+  position: relative;
+  display: flex;
+  gap: 10px;
+
+}
+
+@media (max-width: 1176px) {
+  .parentbox {
     /* background-color: yellow; */
-justify-content: center;
-gap: 20px;
-   }
-   .btn{
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .btn {
     width: auto;
     margin-top: 50px;
-   }
-  .searchbox{
+  }
+
+  .searchbox {
     margin-top: 60px;
   }
-       
-}
-@media  (max-width: 600px){
 
-.search{
-    background-color: aqua;
-    display: none;
 }
-.serachicon{
-    /* background-color: #E80071; */
+
+.navbar {
+  margin-top: 18px;
+}
+
+.list {
+  position: absolute;
+  z-index: 99;
+  top: 38px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.list a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ca1274;
+}
+
+@media (max-width: 436px) {
+  .searchbox input {
+    /* width: 200px; */
+    display: none;
+
+  }
+
+  .serachicon {
     color: gray;
-    position: relative;
-      top:5px;
-       /* left: 240px; */
-       left: 10px;
-       cursor: pointer;
-       border: 2px sild gray;
+    position: absolute;
+    top: 5px;
+    /* right: 20px; */
+    left: -30px;
+    cursor: pointer;
+    border: 2px sild gray;
   }
 }

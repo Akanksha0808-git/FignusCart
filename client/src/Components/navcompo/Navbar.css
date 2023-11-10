@@ -2,8 +2,6 @@ body{
     margin: 0;
     padding: 0;
   }
-
-
 .notactiveClass{
     color: rgb(0, 0, 0);
     transition-delay: 0.2s ease;

@@ -1,4 +1,5 @@
 const data=[
+
     {
         id:'1',
         category:'Mobile',
@@ -59,7 +60,7 @@ const data=[
         GetitBy:'Tommorrow,29October',
     }  , {
         id:'6',
-        category:'Mobile',
+        category:'Mix',
         subCategory:'Android',
         image:'https://m.media-amazon.com/images/I/71pKVhll1IL._AC_UY327_FMwebp_QL65_.jpg',
         heading:"Oneplus Open 5G",
@@ -170,7 +171,7 @@ const data=[
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'16',
-        category:'Mobile',
+        category:'Mix',
         subCategory:'IPhone',
         image:'https://m.media-amazon.com/images/I/81Os1SDWpcL._AC_UY327_FMwebp_QL65_.jpg',
         heading:"Apple iPhone 15 Pro Max",
@@ -225,7 +226,7 @@ const data=[
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'21',
-        category:'Laptop',
+        category:'Mix',
         subcategory:'Laptop',
         image:'https://m.media-amazon.com/images/I/617rprfdhRL._AC_UY327_FMwebp_QL65_.jpg',
         heading:"Acer Aspire Lite ",
@@ -318,7 +319,7 @@ const data=[
         GetitBy:'Thursday,14',
     }   , {
         id:'29',
-        category:'Laptop',
+        category:'Mix',
         subcategory:'Laptop',
 
         image:'https://m.media-amazon.com/images/I/71WDKRWNdaL._AC_UY327_FMwebp_QL65_.jpg',
@@ -462,7 +463,7 @@ const data=[
     }   , {
         id:'41',
         category:'Tablets',
-        subCategory:'IPads',
+        subCategory:'Mix',
         image:'https://m.media-amazon.com/images/I/71VbHaAqbML._AC_UY327_FMwebp_QL65_.jpg',
         heading:"Apple 2022 iPad Air",
         details:'Apple 2022 iPad Air M1 Chip (10.9-inch/27.69 cm, Wi-Fi, 64GB) - Blue (5th Generation)',
@@ -737,7 +738,7 @@ const data=[
     }  , {
         id:'66',
          category:'Home&Kitchen',
-        subCategory:'Furniture',
+        subCategory:'Mix',
         image:'https://m.media-amazon.com/images/I/513tBVV58ZL._AC_SR320,320_.jpg',
         heading:"Fabric 3 Seater Sofa",
         details:'Stone & Beam Lambertville Fabric 3 Seater Sofa (Grey)',
@@ -879,7 +880,7 @@ const data=[
         GetitBy:'Thursday, 16',
     } , {
         id:'79',
-         category:'Home&Kitchen',
+         category:'Mix',
         subCategory:'HomeDecor',
         image:'https://m.media-amazon.com/images/I/41phCICGnUL._SX300_SY300_QL70_FMwebp_.jpg',
         heading:"Ceramic Figures",
@@ -1011,7 +1012,7 @@ const data=[
         GetitBy:'Thursday, 16',
     }, {
         id:'91',
-         category:'Beauty',
+         category:'Mix',
         subCategory:'Makeup',
         image:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/6/36a8a978904320745868_1new.jpg',
         heading:"SUGAR Play Be Boujee Powder Blush",

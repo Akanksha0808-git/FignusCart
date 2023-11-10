@@ -14,7 +14,7 @@ function Login() {
     email:"",
     password: "",
   });
-  const [Server, setServer] = useState();
+  const [data, setdata] = useState();
   const [showPassword, setShowPassword] = useState(false);
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -24,29 +24,65 @@ function Login() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    console.log(formData);
-    //axios.post("url",inputs) to send the data to the backend server
-    axios.post(`https://fignuscart-ly1x.onrender.com/login`, formData)
-      .then((res) => {
-        console.log(res.data);
-        setServer(res.data);
+  //   console.log(formData);
+  //   //axios.post("url",inputs) to send the data to the backend data
+  //   axios.post(`https://fignuscart-ly1x.onrender.com/login`, formData)
+  //     .then((res) => {
+  //       console.log(res.data);
+  //       setdata(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }
+  // useEffect(() => {
+  //   if (data) {
+  //     localStorage.setItem("token", data.token);
+  //     if (data.msg === "User is LoggedIn successfully") {
+  //       alert(data.msg)
+  //       Navi("/dashboard");
+  //     }
+  //   }
+  // }, [data,Navi]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("https://e-shop-api-kmrr.onrender.com/login", formData)
+      .then((response) => {
+        if (response.data.user) {
+          const email = response.data.user[0]
+          const token = response.data.token;
+          // console.log(token);
+          const usersid = response.data.userid;
+          localStorage.setItem("token", token);
+          localStorage.setItem("userid", usersid);
+          localStorage.setItem("email", email)
+          Navi("/");
+        } else {
+
+          toast(`${response.data.msg}`, {
+            position: "top-center"
+            });
+            console.log(response.data.msg)
+          setdata(response.data.msg);
+        }
       })
-      .catch((err) => {
-        console.log(err);
+      .catch((error) => {
+        console.error("Error logging in:", error.message);
+
+        toast(`${error.message}`, {
+          position: "top-center"
+        });
+        
       });
-  }
-  useEffect(() => {
-    if (Server) {
-      localStorage.setItem("token", Server.token);
-      if (Server.msg === "User is LoggedIn successfully") {
-        alert(Server.msg)
-        Navi("/dashboard");
-      }
-    }
-  }, [Server,Navi]);
+  };
+
+
+
 
   return (
     <div className="auth-container">
@@ -76,7 +112,7 @@ function Login() {
         </div>
 
         <button className="btn-submit" type="submit" >Login</button>
-        {Server === undefined ? "" : <div>{Server.msg}</div>}
+        {data === undefined ? "" : <div>{data.msg}</div>}
       </form>
       <div className="intro-text">
       <h2 className='logintxt'>Login</h2>

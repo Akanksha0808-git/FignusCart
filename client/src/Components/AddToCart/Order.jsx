@@ -3,14 +3,13 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment, removeItem } from "../Redux/Slice";
 import {Divider} from "@mui/material"
-import { loadStripe } from "@stripe/stripe-js";
 import { Link } from 'react-router-dom'
 import "./Order.css"
 
 function Order() {
   const select = useSelector((state) => state.cart.data);
   const userid = localStorage.getItem("userid");
-
+  console.log(select)
   const dispatch = useDispatch(); 
 
 
@@ -33,8 +32,6 @@ function Order() {
   };
 
   const pricecal = (item) => {
-    // const cleanedPrice = item.replace(/\s/g, "").replace(/[^\d]/g, "");
-    // const price = parseInt(cleanedPrice, 10);
     return item.price;
   };
 
@@ -44,6 +41,7 @@ function Order() {
       .toString()
       .slice(2, 10),
   }));
+  console.log(cart2)
   // -----------------------------final---------------------------
   const cart3 = cart2.map((item) => ({
     ...item,
@@ -66,37 +64,6 @@ function Order() {
     (total, item) => total +(item.price) * item.quantity,
     0
   );
-
-
-
-  //-------------- Paymen Intigration --------------------------
-  // const makepayment = async () => {
-  //   const stripe = await loadStripe(
-  //     "pk_test_51NCPAYSItp4zxD80Sgt6IQMetdOUyh3Kvs17Thauj56i1IyWYBn2u8byDboYRfA3k9VTPW0qMaYcCif9QtFd3AZQ00rCEMQsVX"
-  //   );
-
-  //   const body = {
-  //     products: cart3,
-  //   };
-  //   const headers = {
-  //     "Content-Type": "application/json",
-  //   };
-  //   const response = await fetch(
-  //     "https://e-shop-api-kmrr.onrender.com/api/create-checkout-session",
-  //     {
-  //       method: "POST",
-  //       headers: headers,
-  //       body: JSON.stringify(body),
-  //     }
-  //   );
-  //   const session = await response.json();
-  //   const result = stripe.redirectToCheckout({
-  //     sessionId: session.id,
-  //   });
-  //   if (result.error) {
-  //     console.log(result.error);
-  //   }
-  // };
 return (
     <div className="Order_Container">
 
@@ -122,7 +89,7 @@ return (
               <div className="second-cont">
 
                 <p>Brand-Name: <span>{item.name}</span></p>
-                <p className="BrandPrice">Brand-Price: ₹<span>{item.price}</span></p>
+                <p className="BrandPrice">Brand-Price: ₹<span>{item.Price}</span></p>
 
                 <div className="Order_btn">
 
@@ -149,7 +116,7 @@ return (
         (
           <div className="no-items-message">
             <div className="empty-cart">
-              <img src="https://m.media-amazon.com/images/G/31/cart/empty/kettle-desaturated._CB424694257_.svg" alt="Empty Cart" />
+              <img src="https://cdn.dribbble.com/users/5107895/screenshots/14532312/media/a7e6c2e9333d0989e3a54c95dd8321d7.gif" alt="Empty Cart"  />
              <p><Link to={"/"}>Cart is Empty</Link></p>
             </div>
           </div>
@@ -177,7 +144,9 @@ return (
                   <td>{" "}No of item <span style={{color : "#d63031"}}>({item.quantity})</span>
                     <br />
                   </td>
-                  <td>{item.name.slice(0, 7)}.</td>
+                  
+                
+<td>{item.name.slice(0, 7)}.</td>
                   <td>₹{(item.price) * item.quantity}</td>
                 </tr>
               ))}
@@ -190,7 +159,7 @@ return (
 
           </table>
 
-          <button onClick={makepayment} className="PaymentButton">Place your order</button>
+          <button className="PaymentButton">Place your order</button>
 
         </div>
       )}
