@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect } from 'react'
 
 import axios from "axios";
 export const Store = createContext();
-const url = "http://localhost:7000/data"
+const url = "https://fignuscart-ly1x.onrender.com/data"
 
 
 

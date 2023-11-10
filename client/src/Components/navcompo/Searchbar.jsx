@@ -45,7 +45,7 @@ const Searchbar = () => {
     };
 
     axios
-      .post("https://localhost:7000/search", data)
+      .post("https://fignuscart-ly1x.onrender.com/search", data)
       .then((response) => {
         setdata(response.data.data);
         console.log(response.data.data);

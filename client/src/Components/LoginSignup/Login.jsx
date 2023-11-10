@@ -29,7 +29,7 @@ function Login() {
 
     console.log(formData);
     //axios.post("url",inputs) to send the data to the backend server
-    axios.post(`http://localhost:7000/login`, formData)
+    axios.post(`https://fignuscart-ly1x.onrender.com/login`, formData)
       .then((res) => {
         console.log(res.data);
         setServer(res.data);

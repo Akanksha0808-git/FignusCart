@@ -148,7 +148,7 @@ const DetailPage = () => {
     console.log("Token:", token);
 
     axios
-      .get("http://localhost:7000/dashboard", {
+      .get("https://fignuscart-ly1x.onrender.com/dashboard", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

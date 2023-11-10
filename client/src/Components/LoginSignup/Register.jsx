@@ -31,7 +31,7 @@ function Register() {
 
     console.log(formData);
     // axios.post("url", inputs) to send the data to the backend server
-    axios.post(`https://handson-4-node.onrender.com/api/register`, formData)
+    axios.post(`https://fignuscart-ly1x.onrender.com/register`, formData)
       .then((res) => {
         console.log(res.data);
         alert(res.data.msg)
