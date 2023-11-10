@@ -1,11 +1,12 @@
 import React from 'react'
-// import "./Latest.css"
+import "./DetailDesign.css"
 import { Link } from "react-router-dom";
 
 
 const DetailDesign = (props) => {
-  const { Heading, id, image, description, Category } = props;
+  const { Heading, id, image, description,price, Category,getitBy,priceDrop } = props;
   return (
+   
     <Link to={"/detailpage/" + id} state={{ articleID: id, Category: Category }} style={{ textDecoration: "none" }}>
       <div className="card">
         <div className="img_card">
@@ -15,15 +16,9 @@ const DetailDesign = (props) => {
         <div className="content">
           <p>{description}</p>
         </div>
-        <div className="username">
-        
-          <div className="name">
-            <h3>Akanksha Sharma</h3>
-            <p>Aug 8 2023 | 10 min read</p>
-          </div>
-        </div>
       </div>
     </Link>
+  
   )
 }
 

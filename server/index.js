@@ -1,7 +1,8 @@
 const express = require('express');
+const connection=require("./config/db")
 const cors = require("cors");
 const PORT=7000;
-const Home = require('./Routes/RoutesCompo');
+const Route=require("./Routes/RoutesCompo")
 
 const app = express();
 
@@ -12,8 +13,14 @@ app.use(cors({
 // body parser used here
 app.use(express.json());
 
-app.get("/", Home)
+app.use("/",Route)
 
-app.listen(PORT,()=>{
-    console.log(`Server is Runing at http://localhost:${PORT}`)
-})
+app.listen(PORT,async ()=>{
+    try{ 
+      await connection();
+      console.log(`server started after making connection `,PORT)}
+    catch(err){
+      console.log(err,"error occured due to server start")
+    }
+   
+  })

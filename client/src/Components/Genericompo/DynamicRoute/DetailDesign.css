@@ -1,0 +1,71 @@
+.TheLatest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  /* CSS for the individual cards */
+  .card {
+    
+    border: 1px solid #868989;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+
+    transition: transform 0.3s ease;
+    max-width: 400px; /* Set a maximum width for the cards */
+    margin: 10px;
+    margin-left: 30px; /* Add margin to separate the cards */
+    display: inline-block;
+     /* Allow the cards to be displayed in a row */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(2, 2, 2, 0.5);
+  }
+  
+  .img_card img {
+    width: 100%;
+    max-height: 200px; /* Adjust the maximum height as needed */
+  }
+  
+  .heading {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #2f3640;
+    margin: 10px 0;
+  }
+  
+  .content p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #2f3640;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 767px) {
+    .card {
+      max-width: 250px;
+      margin: 5px; /* Adjust margin for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .card {
+      max-width: 100%;
+      margin: 5px; /* Adjust margin for smaller screens */
+    }
+  
+    .heading {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  
+    .content p {
+      font-size: 14px;
+    }
+  }
+  

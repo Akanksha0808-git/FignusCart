@@ -1021,7 +1021,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'91',
+        id:'92',
          category:'Beauty',
         subCategory:'Makeup',
         image:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/4/f/4f069ea0LOVEE00000005_1.jpg',
@@ -1032,7 +1032,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'91',
+        id:'93',
          category:'Beauty',
         subCategory:'Makeup',
         image:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/5/655517fPIPAB00002165_1.jpg',
@@ -1043,7 +1043,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'91',
+        id:'94',
          category:'Beauty',
         subCategory:'Makeup',
         image:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/4/7/4753524chiwm00116-c4__1_.jpg',
@@ -1054,7 +1054,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'91',
+        id:'95',
          category:'Beauty',
         subCategory:'Makeup',
         image:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/1/611a6058904245710040_2.jpg',
@@ -1065,7 +1065,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'91',
+        id:'96',
          category:'Beauty',
         subCategory:'Makeup',
         image:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/9/09f21423605972495716_1.jpg',
@@ -1076,7 +1076,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'91',
+        id:'97',
          category:'Beauty',
         subCategory:'Makeup',
         image:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/4/24289d841554433784_1.jpg',
@@ -1109,7 +1109,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     } , {
-        id:'99',
+        id:'100',
          category:'Beauty',
         subCategory:'Jwellery',
         image:'https://m.media-amazon.com/images/I/41eVDXH+N1L._AC_UL480_FMwebp_QL65_.jpg',
@@ -1120,7 +1120,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'99',
+        id:'101',
          category:'Beauty',
         subCategory:'Jwellery',
         image:'https://m.media-amazon.com/images/I/81esl6C2v1L._SY395_.jpg',
@@ -1131,7 +1131,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'99',
+        id:'102',
          category:'Beauty',
         subCategory:'Jwellery',
         image:'https://m.media-amazon.com/images/I/71CSGmv8tQL._AC_UL480_FMwebp_QL65_.jpg',
@@ -1142,7 +1142,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'99',
+        id:'103',
          category:'Beauty',
         subCategory:'Jwellery',
         image:'https://m.media-amazon.com/images/I/41mLnXcUVKL._AC_SR320,320_.jpg',
@@ -1153,7 +1153,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'99',
+        id:'104',
          category:'Beauty',
         subCategory:'Jwellery',
         image:'https://m.media-amazon.com/images/I/510LmaI2uiL._AC_SR270,180_QL70_.jpg',
@@ -1164,7 +1164,7 @@ const data=[
         PriceDrop:'-30%',
         GetitBy:'Thursday, 16',
     }, {
-        id:'99',
+        id:'105',
          category:'Beauty',
         subCategory:'Jwellery',
         image:'https://m.media-amazon.com/images/I/71H5ua7RATL._AC_SR270,180_QL70_.jpg',

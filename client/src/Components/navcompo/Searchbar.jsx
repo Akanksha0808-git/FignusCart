@@ -14,7 +14,6 @@ const Searchbar = () => {
       <button className='btn' >Sign In</button>
       {/* <div className='cart'>
         <h1><FontAwesomeIcon icon={faCartShopping}  className='carto'/></h1>
-      
 
       </div> */}
     </div>

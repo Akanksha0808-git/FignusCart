@@ -21,6 +21,9 @@ import Jwellery from '../Pages/Beauty/Jwellery';
 import Handbags from '../Pages/Beauty/Handbags';
 import Perfumes from '../Pages/Beauty/Perfumes';
 import DetailPage from '../Genericompo/DynamicRoute/DetailPage'
+import Login from '../LoginSignup/Login';
+import Register from '../LoginSignup/Register';
+import Order from '../AddToCart/Order';
 const RouteFile = () => {
   return (
     <div>
@@ -48,8 +51,9 @@ const RouteFile = () => {
      <Route path="/beauty/perfumes"  element={<Perfumes/>} />
      {/* <Route path="/products/:id/:name" element={<DetailPage/>}/> */}
      <Route path="/detailpage/:id" element={<DetailPage/>}/>
-
-
+     {/* <Route path={"/login"} element={<Login/>}/> */}
+          {/* <Route path={"/Signup"} element={<Register/>}/> */}
+          {/* <Route path="/order" element={<Order />} /> */}
    </Routes>
  </BrowserRouter>
     </div>

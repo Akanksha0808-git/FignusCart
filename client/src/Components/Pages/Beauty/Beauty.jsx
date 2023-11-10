@@ -51,7 +51,7 @@ const Beauty = () => {
       <div className="main_Container">
         <div className="card_render">
           {
-         Data && Data.filter((data) => data.category==="Beauty").map((item ,index) => {
+         Data && Data.filter((data) =>data.category==="Beauty").map((item ,index) => {
             return (
               <Boxes key={index}
               image = {item.image}

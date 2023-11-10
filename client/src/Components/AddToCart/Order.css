@@ -1,0 +1,186 @@
+/* .Order_Container {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    background-color: #e3e6e6;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .OderProduct {
+    background-color: #fff;
+    width: 50%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .heading{
+    padding: 20px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .heading h2{
+    font-size: 1.2rem;
+    padding-left: 20px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .container {
+    margin-top: 10px;
+    display: flex;
+    background-color: white;
+  }
+  .first-cont {
+    width: 40%;
+  }
+  .first-cont img {
+    width: 100%;
+  }
+  
+  .second-cont {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .second-cont p{
+    color: #2c3e50;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .second-cont p:first-child span{
+    font-weight: 700;
+  }
+  .BrandPrice span{
+    color: #27ae60;
+  }
+  .Order_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .incDre_tn{
+    width: 130px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.5px solid #3498db;
+    border-radius: 15px;
+  }
+  .incDre_tn button{
+    width: 40px;
+    outline: none;
+    border: 1px solid #3498db;
+    background: transparent;
+    height: 35px;
+  }
+  .incDre_tn button:hover{
+    border: 2px solid #3498db;
+  }
+  .Left_button{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  .Right_button{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .value{
+    font-size: 1.2rem;
+    padding-top: 5px;
+    font-weight: 600;
+  }
+  .remove button{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    font-size: 1.1rem;
+    color: #0984e3;
+    font-weight: 700;
+  }
+  .remove button:hover{
+    color: #d63031;
+  }
+  
+  
+  
+  
+  .amount {
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;  
+  }
+  table{
+    width: 100%;
+  }
+  table tbody th h2{
+    width: 100%;
+  }
+  
+  .Item_amount{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  table td, tfoot, th, thead, tr{
+    padding: 0px 20px 0 20px;
+  }
+  
+  @media screen and (max-width: 815px) {
+    .OderProduct{
+      width: 90vw;
+    }
+    .amount{
+      width: 90vw;
+    }
+    table td, tfoot, th, thead, tr{
+      padding: 0px 2px 0px 2px;
+    }
+  }
+  
+  .PaymentButton{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #f1c40f;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .PaymentButton:hover{
+    color: #d63031;
+  }
+  
+  
+  
+  .no-items-message p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    
+    transition: all ease;
+  }
+  .no-items-message p a{
+    text-decoration: none;
+    color: #d63031;
+  }
+  .no-items-message p:hover{
+    transform: scale(1.2);
+  } */
