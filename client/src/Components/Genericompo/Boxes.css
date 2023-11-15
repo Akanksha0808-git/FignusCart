@@ -87,11 +87,11 @@
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    bottom: -18px;
+    bottom: -33px;
     font-weight: 600;
 }
 .Card_Content button:hover{
-    color: rgba(0, 0, 0, 0.484);
+    color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width : 667px) {

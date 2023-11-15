@@ -18,7 +18,7 @@ const BeautyDropdown = () => {
         <hr style={{backgroundColor:"gray"}}></hr>
 
         <li>
-          <NavLink to="/beauty/handbags">Handbags</NavLink>
+          <NavLink to="/beauty/handbag">Handbags</NavLink>
         </li>
        
       </ul>
