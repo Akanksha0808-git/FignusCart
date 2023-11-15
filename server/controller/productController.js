@@ -1,6 +1,6 @@
 const Products = require("../model/productSchema")
 const data=require("../Data")
-// Send All products from DB 
+
 
 const allproducts = async (req, res)=>{
     try{

@@ -1,5 +1,5 @@
-
 import React, { useContext } from "react";
+import { Store } from '../../ContextAPI/DataStore'
 import { Link } from "react-router-dom";
 import { useParams, useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
@@ -7,7 +7,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import "./DetailPage.css";
 import DetailDesign from "./DetailDesign";
-import { Store } from '../../ContextAPI/DataStore'
 import Footer from "../Footer";
 import { addtocart } from "../../Redux/Slice";
 import "./DetailPage.css"
@@ -18,7 +17,7 @@ const DetailPage = () => {
 
   const notify = () => toast("Item is added to the cart");
 
-
+// token verificartion.....
   const [verified, setVerified] = useState(false);
 
 
@@ -92,6 +91,7 @@ const DetailPage = () => {
                 <p>Price: {item.price}</p>
                 <p>GetitBy: {item.GetitBy}</p>
               </div>
+              
               {verified ? (
                 <Link onClick={() => handleClick(item, item.id)}>
                   <button className="AddToCart">Add To Cart</button>

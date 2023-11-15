@@ -2,7 +2,7 @@ const express = require('express');
 const connection=require("./config/db")
 const cors = require("cors");
 const PORT=4000;
-const Route=require("./Routes/RoutesCompo")
+const routes=require("./Routes/RoutesCompo")
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(cors({
 // body parser used here
 app.use(express.json());
 
-app.use("/",Route)
+app.use("/",routes)
 
 app.listen(PORT,async ()=>{
     try{ 

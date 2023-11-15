@@ -51,7 +51,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://e-shop-api-kmrr.onrender.com/login", formData)
+      .post("https://fignuscart-ly1x.onrender.com/login", formData)
       .then((response) => {
         if (response.data.user) {
           const email = response.data.user[0]
