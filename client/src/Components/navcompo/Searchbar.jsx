@@ -46,9 +46,12 @@ const Searchbar = () => {
     const data = {
       search: name,
     };
+// const url="https://fignuscart-ly1x.onrender.com/search"
+const url="http://localhost:4000/search"
+
 
     axios
-      .post("https://fignuscart-ly1x.onrender.com/search", data)
+      .post(url, data)
       .then((response) => {
         setdata(response.data.data);
         console.log(response.data.data);

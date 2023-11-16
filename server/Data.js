@@ -267,7 +267,7 @@ const data=[
         details:'Lenovo V15 Intel Celeron N4500 15.6" (39.62 cm) FHD (1920x1080) Antiglare 250 Nits Thin and Light Laptop',
         rating:'★ ★ ★ ★ ★',
         price:'₹23,990',
-        PriceDrop:'-43%',
+        PriceDrop:'23,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'25',
@@ -656,7 +656,7 @@ const data=[
         details:'Galaxy Tab S9 FE 27.69 cm (10.9 inch) Display, RAM 6 GB, ROM 128 GB Expandable, S Pen in-Box, Wi-Fi, IP68 Table',
         rating:'★ ★ ★ ★ ★',
         price:'₹36,999',
-        PriceDrop:'-18%',
+        PriceDrop:'₹36,999',
         GetitBy:'Thursday, 16',
     }  , {
         id:'59',

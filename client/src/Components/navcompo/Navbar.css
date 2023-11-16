@@ -7,11 +7,10 @@ body{
     transition-delay: 0.2s ease;
 }
 .container{
-  background-color:white;
+  background-color:rgb(255, 255, 255);
   position: sticky;
   z-index: 19;
-  left: 0;
-  top: 30px;
+  top: 45px;
 }
 
    /* Menu styles */

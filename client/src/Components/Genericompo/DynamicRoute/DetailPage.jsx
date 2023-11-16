@@ -24,9 +24,11 @@ const DetailPage = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     console.log("Token:", token);
+// const url="https://fignuscart-ly1x.onrender.com/dashboard"
+const url="http://localhost:4000/dashboard"
 
     axios
-      .get("https://fignuscart-ly1x.onrender.com/dashboard", {
+      .get(url, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -79,11 +81,12 @@ const DetailPage = () => {
           .map((item, index) => (
             <div key={index} className="main-head">
               <div className="head">
-                <h1>{item.heading}</h1>
+                <h1 style={{color:"black",display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600"}}>{item.heading}</h1>
               </div>
 
               <div className="Main_Image">
-                <img src={item.image} alt="not Found" />
+                {/* <h1>{item.heading}</h1> */}
+                <img src={item.image} alt="not Found" style={{height:"330px"}}/>
               </div>
               <div className="description">
                 <p>{item.details}</p>

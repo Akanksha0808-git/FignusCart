@@ -50,8 +50,11 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // const url="https://fignuscart-ly1x.onrender.com/login";
+    const url="http://localhost:4000/login";
+
     axios
-      .post("https://fignuscart-ly1x.onrender.com/login", formData)
+      .post(url, formData)
       .then((response) => {
         if (response.data.user) {
           const email = response.data.user[0]

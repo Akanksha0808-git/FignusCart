@@ -4,11 +4,7 @@ export const Store = createContext();
 import "./lazyloader.css"
 
 // const url = "https://fignuscart-ly1x.onrender.com/data"
-const url = "https://localhost:4000/data"
-
-
-
-
+const url = "http://localhost:4000/data"
 
 function DataStore(props) {
 const [loading, setLoading] = useState(true);
@@ -19,7 +15,7 @@ const [loading, setLoading] = useState(true);
       try {
         const res = await axios.get(url);
         console.log(res.data)
-        setData(res.data);
+         await setData(res.data);
         setLoading(false); 
       } catch (err) {
         console.log("error occured while fetching the data");
@@ -32,7 +28,7 @@ const [loading, setLoading] = useState(true);
 
   if (loading) {
     return <div className="loder_body">
-      <img src='https://cdn.dribbble.com/users/1797086/screenshots/5615214/fish3.gif' class="loader"></img>
+      <img src='https://cdn.dribbble.com/users/1797086/screenshots/5615214/fish3.gif' className="loader"></img>
     </div>
   }
 

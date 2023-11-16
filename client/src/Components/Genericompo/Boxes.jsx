@@ -23,9 +23,9 @@ const Boxes = (props) => {
         <br />
         <p className='brand_price'>MRP : <span>{price}</span></p>
       </div>
-        <Link to="/detailpage/${id}">
+        {/* <Link to="/detailpage/${id}"> */}
         <button onClick={()=>window.scroll(0,0)}>Add to Cart</button>
-        </Link>
+        {/* </Link> */}
     </div>
   </div>
   </div>

@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 const secretkey = "#@$%^&*"
 const authMiddleware = (req, res, next) => {
+  
   try {
     const Bearertoken = req.headers["authorization"];
     if (Bearertoken === undefined) {

@@ -28,22 +28,39 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+// const url="https://fignuscart-ly1x.onrender.com/register"
+const url="http://localhost:4000/register"
 
     console.log(formData);
     // axios.post("url", inputs) to send the data to the backend server
-    axios.post(`https://fignuscart-ly1x.onrender.com/register`, formData)
-      .then((res) => {
-        console.log(res.data);
-        alert(res.data.msg)
-        setServer(res.data);
+    // axios.post(url, formData)
+    //   .then((res) => {
+    //     console.log(res.data);
+    //     alert(res.data.msg)
+    //     setServer(res.data);
 
-        localStorage.setItem("token",res.formData.token)
+    //     localStorage.setItem("token",res.formData.token)
        
-      })
-      .catch((err) => {
-        console.log(err);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
         
-      });
+    //   });
+    axios.post(url, formData)
+  .then((res) => {
+    console.log(res.data);
+    alert(res.data.msg)
+    setServer(res.data);
+
+    // Check if 'token' property exists before accessing it
+    if (res.data.token) {
+      localStorage.setItem("token", res.data.token);
+    }
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
     
   }
 

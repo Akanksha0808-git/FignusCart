@@ -50,7 +50,7 @@ const RouteFile = () => {
      <Route path="/beauty/handbag"  element={<Handbags/>} />
      <Route path="/beauty/perfumes"  element={<Perfumes/>} />
      <Route path="/detailpage/:id" element={<DetailPage/>}/>
-     <Route path="/detailpage/:id/:name" element={<DetailPage/>}/>
+     {/* <Route path="/detailpage/:id/:name" element={<DetailPage/>}/> */}
 
      <Route path={"/login"} element={<Login/>}/>
           <Route path={"/register"} element={<Register/>}/>

@@ -20,12 +20,18 @@ const Navbar = () => {
     <div className="container ">
       <div className="navbar">
         <div className="logog">
-          <img
+          {/* <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbVKmPdUKwsmJJT0dxySl2aUFk2e1FB4ULTDDhvXyT51vt-NxfWGExkt4zcuU-JiJOhI8&usqp=CAU"
             alt="img here"
             srcset=""
           
-          />
+          /> */}
+          <img
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbVKmPdUKwsmJJT0dxySl2aUFk2e1FB4ULTDDhvXyT51vt-NxfWGExkt4zcuU-JiJOhI8&usqp=CAU"
+  alt="img here"
+  srcSet=""  // Corrected from srcset to srcSet
+/>
+
           <h5 className='h5'>
             Fignus
           </h5>
@@ -86,7 +92,7 @@ const Navbar = () => {
     <Searchbar/>
       
       </div>
-      <img srcSet="https://images-static.nykaa.com/uploads/6d302523-73a6-4cd3-aaa7-9e5e6aade7c8.jpg?tr=w-1200,cm-pad_resize"  alt="" className='saleimg' style={{height:"30px",position:"relative",top:"20px"}} />
+      <img src="https://images-static.nykaa.com/uploads/6d302523-73a6-4cd3-aaa7-9e5e6aade7c8.jpg?tr=w-1200,cm-pad_resize"  srcSet=""  alt="" className='saleimg' style={{height:"30px",position:"relative",top:"20px"}} />
       
     </div>
   );

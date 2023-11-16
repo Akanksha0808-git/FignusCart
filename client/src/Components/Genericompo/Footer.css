@@ -109,7 +109,9 @@
   .copyright p {
     font-size: 1rem;
   }
-
+.logog{
+  /* margin-top: 30px; */
+}
   .logog img{
     position: relative;
     top: 23px;
