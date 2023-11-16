@@ -3,7 +3,9 @@ import axios from "axios";
 export const Store = createContext();
 import "./lazyloader.css"
 
-const url = "https://fignuscart-ly1x.onrender.com/data"
+// const url = "https://fignuscart-ly1x.onrender.com/data"
+const url = "https://localhost:4000/data"
+
 
 
 
