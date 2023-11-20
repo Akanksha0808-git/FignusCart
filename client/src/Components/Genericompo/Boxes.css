@@ -104,6 +104,9 @@
     .brand_price{
         line-height: 15px;
     }
+    .Card_Content button{
+        
+    }
 }
 @media screen and (max-width : 555px) {
     .productCard{

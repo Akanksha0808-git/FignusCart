@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useSelector } from "react-redux";
+import axios from 'axios';
 
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -46,8 +47,8 @@ const Searchbar = () => {
     const data = {
       search: name,
     };
-// const url="https://fignuscart-ly1x.onrender.com/search"
-const url="http://localhost:4000/search"
+const url="https://fignuscart-ly1x.onrender.com/search"
+// const url="http://localhost:4000/search"
 
 
     axios
@@ -57,7 +58,7 @@ const url="http://localhost:4000/search"
         console.log(response.data.data);
       })
       .catch((error) => {
-        console.log(error);
+        console.error("Error fetching data:", error);
       });
   }, [name]);
 
@@ -84,9 +85,16 @@ const url="http://localhost:4000/search"
           ) : null}
         </div>
         <div className="Sign_In">
-          {
-            token ? (<Link onClick={handletoken} className='btn'>Logout</Link>) : (<Link to={"/login"} className='btn'>SignIn</Link>)
-          }
+        {token ? (
+  // Display components for authenticated users
+  <>
+    <Link onClick={handletoken} className='btn'>Logout</Link>
+    {/* Add other components for authenticated users */}
+  </>
+) : (
+  // Display components for non-authenticated users
+  <Link to={"/login"} className='btn'>SignIn</Link>
+)}
         </div>
       </div>
 
