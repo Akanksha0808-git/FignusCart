@@ -12,10 +12,10 @@ var http = require('http').Server(app);
 
 // Corspolicy used here 
 app.use(cors({
-    // origin : "*"
-    origin: ['http://localhost:5173'],
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
+    origin : "*"
+    // origin: ['http://localhost:5173'],
+    // methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    // credentials: true,
 }))
 var http = require('http').Server(app);
 
