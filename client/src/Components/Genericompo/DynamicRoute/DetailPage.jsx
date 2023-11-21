@@ -19,7 +19,7 @@ const DetailPage = () => {
 
 // token verificartion.....
   const [verified, setVerified] = useState(false);
-
+console.log(verified)
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -64,11 +64,12 @@ const url="http://localhost:4000/dashboard"
           image: item.image,
           price: item.PriceDrop,
         }),
-        notify()
       );
+      notify()
+
       // Call the notify function here after adding to the cart
     } else {
-      alert("Please log in first to add to cart.");
+      notify("Please log in first to add to cart.");
     }
   };
 

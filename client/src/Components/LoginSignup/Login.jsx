@@ -4,7 +4,7 @@ import axios from "axios"
 import "./Compo.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; // Import the specific icons you nee
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -48,42 +48,76 @@ function Login() {
   //   }
   // }, [data,Navi]);
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // const url="https://fignuscart-ly1x.onrender.com/login";
+  //   const url="http://localhost:4000/login";
+
+  //   axios
+  //     .post(url, formData)
+  //     .then((response) => {
+  //       console.log(response.data)
+  //       if (response.data.user) {
+
+  //         const email = response.data.user[0]
+  //         const token = response.data.token;
+  //         // console.log(token);
+  //         const usersid = response.data.userid;
+  //         localStorage.setItem("token", token);
+  //         localStorage.setItem("userid", usersid);
+  //         localStorage.setItem("email", email)
+  //         Navi("/");
+  //       } else {
+
+  //         toast.success(`${response.data.msg}`, {
+  //           position: "top-center"
+  //           });
+  //           console.log(response.data.msg)
+  //         setdata(response.data.msg);
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error logging in:", error.message);
+
+  //       toast(`${error.message}`, {
+  //         position: "top-center"
+  //       });
+        
+  //     });
+  // };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // const url="https://fignuscart-ly1x.onrender.com/login";
-    const url="http://localhost:4000/login";
-
+    const url = "http://localhost:4000/login";
+  
     axios
       .post(url, formData)
       .then((response) => {
+        console.log(response.data);
         if (response.data.user) {
-          const email = response.data.user[0]
+          const email = response.data.user[0];
           const token = response.data.token;
-          // console.log(token);
           const usersid = response.data.userid;
           localStorage.setItem("token", token);
           localStorage.setItem("userid", usersid);
-          localStorage.setItem("email", email)
+          localStorage.setItem("email", email);
           Navi("/");
+  
+          // Show success notification
+          toast.success("Login successful!", {
+            position: "top-center",
+            autoClose: 2000, // Close the toast after 2 seconds
+          });
         } else {
-
-          toast(`${response.data.msg}`, {
-            position: "top-center"
-            });
-            console.log(response.data.msg)
           setdata(response.data.msg);
         }
       })
       .catch((error) => {
         console.error("Error logging in:", error.message);
-
-        toast(`${error.message}`, {
-          position: "top-center"
+        toast.error(`Error: ${error.message}`, {
+          position: "top-center",
         });
-        
       });
   };
-
 
 
 

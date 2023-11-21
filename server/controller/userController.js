@@ -58,20 +58,20 @@ const login = async(req, res) => {
 
         res.status(200).send({user : [loginemail, loginpass], token : token, userid : login._id})
     }
-    catch{
+    catch(err){
         res.status(500).send({msg : err.message});
     }
     
   };
   const dashboard = (req, res)=>{
     return res.send({
-        result : "My name is Akanksha and You are Verify"
+        result : "Hiiii!!!!!You are Verified"
     })
 }
 const searchproduct = async(req, res)=>{
     try{
         const search = req.body.search;
-        console.log(search);
+        console.log("Search term:",search);
 
         const searching = await Products.find({
             Name : {$regex : new RegExp(search , "i")}, // "i" for case-insensitive search

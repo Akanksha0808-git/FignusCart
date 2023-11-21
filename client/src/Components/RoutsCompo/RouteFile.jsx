@@ -23,7 +23,10 @@ import Perfumes from '../Pages/Beauty/Perfumes';
 import DetailPage from '../Genericompo/DynamicRoute/DetailPage'
 import Login from '../LoginSignup/Login';
 import Register from '../LoginSignup/Register';
+
 import Order from '../AddToCart/Order';
+import Success from '../PaymentGate/Success';
+import Cancel from '../PaymentGate/Cancel';
 const RouteFile = () => {
   return (
     <div>
@@ -55,7 +58,14 @@ const RouteFile = () => {
      <Route path={"/login"} element={<Login/>}/>
           <Route path={"/register"} element={<Register/>}/>
           <Route path="/order" element={<Order />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/cancel" element={<Cancel />} />
+
+
+
    </Routes>
+   
+
  </BrowserRouter>
     </div>
   )

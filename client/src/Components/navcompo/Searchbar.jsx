@@ -1,31 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useSelector } from "react-redux";
 import axios from 'axios';
 
-import Badge from '@mui/material/Badge';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Avatar from '@mui/material/Avatar';
-
 import "./Searchbar.css"
 
 const Searchbar = () => {
+  const navi =useNavigate();
   const [name, setname] = useState("");
   const select = useSelector((state) => state.cart.data);
   const userid = localStorage.getItem("userid");
-  const filteredItems = select.filter((item) => item.user_id === userid);
+  // const filteredItems = select.filter((item) => item.user_id === userid);
   const [data1, setdata] = useState([]);
   const token = localStorage.getItem("token");
-  const email = localStorage.getItem("email");
+  // const email = localStorage.getItem("email");
   const handleChange = (e) => {
     setname(e.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
 
   const handleLinkClick = () => {
     // Reset the name state to an empty string when a link is clicked
@@ -33,10 +27,17 @@ const Searchbar = () => {
     window.scroll(0, 0)
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   const handletoken = () => {
+    
     localStorage.removeItem("token");
     localStorage.removeItem("userid");
     localStorage.removeItem("email");
+
+    navi("/")
   };
   useEffect(() => {
     if (name === "") {
@@ -47,15 +48,16 @@ const Searchbar = () => {
     const data = {
       search: name,
     };
-const url="https://fignuscart-ly1x.onrender.com/search"
-// const url="http://localhost:4000/search"
+// const url="https://fignuscart-ly1x.onrender.com/search"
+const url="http://localhost:4000/search"
 
 
     axios
       .post(url, data)
       .then((response) => {
-        setdata(response.data.data);
         console.log(response.data.data);
+
+        setdata(response.data.data);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -68,17 +70,22 @@ const url="https://fignuscart-ly1x.onrender.com/search"
     <div className='parentbox'>
       <div className='searchbox'>
         <input type="text" placeholder="Search products, brands etc" className='search form-control' aria-label="Search" value={name} onChange={handleChange} />
-        <div className='serachicon '> <FontAwesomeIcon icon={faSearch} /></div>
+        <div className='serachicon ' onClick={handleSubmit}> <FontAwesomeIcon icon={faSearch} /></div>
 
         <div className="list">
           {data1.length > 0 ? (
             <ul>
               {data1.map((item, index) => (
+                // <Link
+                //   to={"/detailpage/:id"}
+                //   onClick={handleLinkClick} // Call the function to reset name state
+                // >
                 <Link
-                  to={"/product/" + item.id + "/" + item.category}
-                  onClick={handleLinkClick} // Call the function to reset name state
+                  to={`/product/${item.id}`} 
+                  onClick={handleLinkClick}
+                  key={index}
                 >
-                  <li key={index}>{item.Name}</li>
+                  <li key={index}>{item.name}</li>
                 </Link>
               ))}
             </ul>

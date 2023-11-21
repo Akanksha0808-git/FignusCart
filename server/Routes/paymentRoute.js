@@ -10,9 +10,9 @@ const path = require('path');
 payment_route.set('view engine','ejs');
 payment_route.set('views',path.join(__dirname, '../views'));
 
-const paymentController = require('../controllers/paymentController');
+const paymentController = require('../controller/paymentController');
 
-payment_route.get('/', paymentController.renderBuyPage);
+// payment_route.get('/', paymentController.renderBuyPage);
 payment_route.post('/pay', paymentController.payProduct);
 payment_route.get('/success', paymentController.successPage);
 payment_route.get('/cancel', paymentController.cancelPage);
