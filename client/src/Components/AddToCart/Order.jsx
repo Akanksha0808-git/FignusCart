@@ -173,6 +173,7 @@ import "./Order.css";
 
 function Order() {
   const select = useSelector((state) => state.cart.data);
+  console.log(select)
   const userid = localStorage.getItem("userid");
   const dispatch = useDispatch();
 
@@ -361,7 +362,9 @@ function Order() {
           </table>
 
           <PayPalScriptProvider options={{ "client-id": "AfIO8KeE8CQotCqRfMms5lgPa0ZbWGhQ4AgE3uOpQRDKGcdzylqPsVpob9TpyyolOw1wi3I8zFPvnjqT" }}>
-            <PayPalButtons createOrder={(data, actions) => createOrder(data, actions, filteredItems)} />
+            {/* <PayPalButtons createOrder={(data, actions) => createOrder(data, actions, filteredItems) } /> */}
+            <PayPalButtons createOrder={(data, actions) => createOrder(data, actions, filteredItems)} onError={(err) => console.error("PayPal Error:", err)} />
+
           </PayPalScriptProvider>
         </div>
       )}

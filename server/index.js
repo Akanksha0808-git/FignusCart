@@ -44,8 +44,8 @@ const server = app.listen(PORT, async () => {
   }
 });
 
-// Increase server timeout (for example, to 60 seconds)
-server.timeout = 60000;
-  http.listen(3000, function(){
-    console.log('Server is running');
-});
+// // Increase server timeout (for example, to 60 seconds)
+// server.timeout = 60000;
+//   http.listen(3000, function(){
+//     console.log('Server is running');
+// });

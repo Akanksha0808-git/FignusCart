@@ -85,22 +85,60 @@ function Login() {
         
   //     });
   // };
+  
+  
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const url = "http://localhost:4000/login";
+  
+  //   axios
+  //     .post(url, formData)
+  //     .then((response) => {
+  //       console.log(response.data);
+  //       if (response.data.user) {
+  //         const email = response.data.user[0];
+  //         const token = response.data.token;
+  //         const usersid = response.data.userid;
+  //         localStorage.setItem("token", token);
+  //         localStorage.setItem("userid", usersid);
+  //         localStorage.setItem("email", email);
+  //         Navi("/");
+  
+  //         // Show success notification
+  //         toast.success("Login successful!", {
+  //           position: "top-center",
+  //           autoClose: 2000, // Close the toast after 2 seconds
+  //         });
+  //       } else {
+  //         setdata(response.data.msg);
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error logging in:", error.message);
+  //       toast.error(`Error: ${error.message}`, {
+  //         position: "top-center",
+  //       });
+  //     });
+  // };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const url = "http://localhost:4000/login";
   
-    axios
-      .post(url, formData)
+    axios.post(url, formData)
       .then((response) => {
         console.log(response.data);
         if (response.data.user) {
           const email = response.data.user[0];
           const token = response.data.token;
           const usersid = response.data.userid;
+  
+          // Set tokens in localStorage
           localStorage.setItem("token", token);
           localStorage.setItem("userid", usersid);
           localStorage.setItem("email", email);
-          Navi("/");
+  
+          Navi("/"); // Redirect to the desired page
   
           // Show success notification
           toast.success("Login successful!", {
@@ -118,8 +156,8 @@ function Login() {
         });
       });
   };
-
-
+  
+  
 
   return (
     <div className="auth-container">

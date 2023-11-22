@@ -1,4 +1,6 @@
 import React from 'react'
+// import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+
 import { BrowserRouter ,Routes ,Route } from 'react-router-dom';
 import Home from '../Pages/Home'
 import Laptop from '../Pages/Laptop'
@@ -57,7 +59,9 @@ const RouteFile = () => {
 
      <Route path={"/login"} element={<Login/>}/>
           <Route path={"/register"} element={<Register/>}/>
+          {/* <PayPalScriptProvider> */}
           <Route path="/order" element={<Order />} />
+          {/* </PayPalScriptProvider> */}
           <Route path="/success" element={<Success />} />
           <Route path="/cancel" element={<Cancel />} />
 
