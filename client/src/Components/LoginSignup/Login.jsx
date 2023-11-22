@@ -138,13 +138,15 @@ function Login() {
           localStorage.setItem("userid", usersid);
           localStorage.setItem("email", email);
   
-          Navi("/"); // Redirect to the desired page
-  
+
           // Show success notification
           toast.success("Login successful!", {
             position: "top-center",
             autoClose: 2000, // Close the toast after 2 seconds
           });
+          Navi("/"); // Redirect to the desired page
+  
+          
         } else {
           setdata(response.data.msg);
         }
