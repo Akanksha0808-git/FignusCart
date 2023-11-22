@@ -3,8 +3,8 @@ import axios from "axios";
 export const Store = createContext();
 import "./lazyloader.css"
 
-// const url = "https://fignuscart-ly1x.onrender.com/data"
-const url = "http://localhost:4000/data"
+const url = "https://fignuscart-ly1x.onrender.com/data"
+// const url = "http://localhost:4000/data"
 
 function DataStore(props) {
 const [loading, setLoading] = useState(true);

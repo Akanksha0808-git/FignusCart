@@ -1,6 +1,6 @@
-/* search box styling */
+/* search box styling
 .parentbox {
-  /* background-color: yellow; */
+
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -12,6 +12,32 @@
   margin-top: 48px;
 
 
+}
+.Search{
+  width: 40%;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  top: 70px;
+  right: 10px;
+}
+.searchbar{
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+.list{
+  position: absolute;
+  z-index: 99;
+  top: 38px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.list a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #394657;
 }
 
 .serachicon {
@@ -26,16 +52,12 @@
 .search {
   height: 25px;
   width: 260px;
-  /* border-radius: 20px; */
 }
-
-/* sign in button */
 .btn {
 
   height: 50px;
   width: 70px;
-  /* margin-top: 35px; */
-  /* margin-right: 10%; */
+ 
 
   border: none;
   text-decoration: none;
@@ -63,14 +85,11 @@
 }
 
 .carto {
-  /* position: relative; */
   font-size: 30px;
-  /* top: 20px; */
   right: 120px;
   color: gray;
 }
 
-.Sign_In {}
 
 .searchbox {
   position: relative;
@@ -81,7 +100,6 @@
 
 @media (max-width: 1176px) {
   .parentbox {
-    /* background-color: yellow; */
     justify-content: center;
     gap: 20px;
   }
@@ -118,7 +136,6 @@
 
 @media (max-width: 436px) {
   .searchbox input {
-    /* width: 200px; */
     display: none;
 
   }
@@ -127,9 +144,86 @@
     color: gray;
     position: absolute;
     top: 5px;
-    /* right: 20px; */
     left: -30px;
     cursor: pointer;
     border: 2px sild gray;
+  }
+} */
+
+.navbar-brand h2{
+  font-size: 2rem;
+}
+.navbar{
+  padding: 0 !important;
+  background-color: #394657 !important;
+  position: relative;
+}
+
+.navbar-brand h2 span{
+  font-size: 3rem;
+  color: #4444ab;
+}
+.cart_and_Sign_In{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Sign_In a{
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 2px;
+  border: 1px solid #131921;
+  border-radius: 2px;
+  padding: 8px;
+}
+.Sign_In a:hover{
+  border: 1px solid white;
+}
+.cart_icon #icon{
+  margin-right: 10px;
+  color: #fff;
+  margin-top: 2px;
+}
+.Search{
+  width: 40%;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  top: 70px;
+  right: 10px;
+}
+.searchbar{
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+.list{
+  position: absolute;
+  z-index: 99;
+  top: 38px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.list a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #394657;
+}
+
+
+
+@media screen and (max-width : 972px) {
+  .Search{
+      width: 60%;
+  }
+}
+
+@media screen and (max-width : 333px) {
+  .cart_and_Sign_In {
+      gap: 8px;
   }
 }

@@ -68,27 +68,86 @@ const login = async(req, res) => {
         result : "Hiiii!!!!!You are Verified"
     })
 }
-const searchproduct = async(req, res)=>{
-    try{
-        const search = req.body.search;
-        console.log("Search term:",search);
+// const searchproduct = async(req, res)=>{
+//     try{
+//         const search = req.body.search;
+//         console.log("Search term:",search);
 
+//         const searching = await Products.find({
+//             Name : {$regex : new RegExp(search , "i")}, // "i" for case-insensitive search
+//         });
+//         if(searching.length > 0){
+//             return res.status(200).json({success : true, msg : "Products Details", data : searching});
+//         }else{
+//             return res.status(404).json({msg : "No matching products found"});
+//         }
+//     }
+//     catch(err){
+//         console.log(err.message);
+//         return res.status(500).json({msg : "Internal Server Error" , error : err.message});
+//     }
+// }
+const searchproduct = async (req, res) => {
+    // try {
+    //   const search = req.body.search;
+    //   console.log("Search term:", search);
+    //   const page = req.body.page || 1;
+    //   const pageSize = req.body.pageSize || 10;
+  
+    //   const searching = await Products.find({
+    //     Name: { $regex: new RegExp(search, "i") },
+    //   });
+    // //   .skip((page - 1) * pageSize)
+    // //   .limit(pageSize);
+  
+    //   if (searching.length > 0) {
+    //     return res
+    //       .status(200)
+    //       .json({ success: true, msg: "Products Details", data: searching });
+    //   } else {
+    //     return res.status(404).json({ msg: "No matching products found" });
+    //   }
+    // } catch (err) {
+    //   console.log(err.message);
+    //   return res
+    //     .status(500)
+    //     .json({ msg: "Internal Server Error", error: err.message });
+    // }
+    try {
+        const search = req.body.search;
+    
         const searching = await Products.find({
-            Name : {$regex : new RegExp(search , "i")}, // "i" for case-insensitive search
-        });
-        if(searching.length > 0){
-            return res.status(200).json({success : true, msg : "Products Details", data : searching});
-        }else{
-            return res.status(404).json({msg : "No matching products found"});
+          $or: [
+            { heading: { $regex: new RegExp(search, "i") } },
+            { details: { $regex: new RegExp(search, "i") } },
+            { category: { $regex: new RegExp(search, "i") } },
+            // Add more fields as needed
+          ],
+        })
+    
+        if (searching.length > 0) {
+          return res.status(200).json({
+            success: true,
+            msg: "Products Details",
+            data: searching,
+          });
+        } else {
+          return res.status(404).json({ msg: "No matching products found" });
         }
-    }
-    catch(err){
+      } catch (err) {
         console.log(err.message);
-        return res.status(500).json({msg : "Internal Server Error" , error : err.message});
-    }
-}
+        return res.status(500).json({
+          msg: "Internal Server Error",
+          error: err.message,
+        });
+      }
+    
+  };
+  
+
 
 module.exports = { Register, login,dashboard,searchproduct };
+
 
 
 // const Register = async(req,res)=>{
