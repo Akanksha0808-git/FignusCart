@@ -46,7 +46,7 @@ function Order() {
     ...item,
     price: parseInt(item.price),
   }));
-  console.log("item in cart", cart3);
+  console.log("items in cart", cart3);
 
 
   // -------------new--------
@@ -91,11 +91,16 @@ function Order() {
       }
     );
     const session = await response.json();
+    console.log("Session details:", session);
     const result = stripe.redirectToCheckout({
       sessionId: session.id,
     });
     if (result.error) {
-      console.log(result.error);
+      console.log("Stripe error:", result.error);
+    }else if (result.paymentIntent.status === "succeeded") {
+      console.log("Payment successful! Clearing the cart.");
+      // Payment successful, clear the cart
+      dispatch(clearCart);
     }
   };
 

@@ -41,6 +41,7 @@ const url="https://fignuscart-ly1x.onrender.com/register"
             email: "",
             password: "",
           });
+          window.alert("user registered succesfully")
           nav("/login");
         } else {
           setdata(res.data.msg);

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Store } from '../../ContextAPI/DataStore'
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { useParams, useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "react-toastify/dist/ReactToastify.css";
@@ -52,9 +52,9 @@ const DetailPage = () => {
   }, []); // Empty dependency array to ensure it runs only once on mount
 
   const dispatch = useDispatch();
-  const selelct = useSelector((state) => state.cart.data);
+  // const selelct = useSelector((state) => state.cart.data);
   const [Detaildata] = useContext(Store);
-  console.log(selelct);
+  // console.log(selelct);
   
   const { id } = useParams();
 

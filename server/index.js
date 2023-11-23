@@ -61,7 +61,6 @@ require("dotenv").config();
 const connection = require("./config/db");
 const cors = require("cors");
 const routes = require("./Routes/RoutesCompo");
-const paymentRoute = require('./Routes/paymentRoute');
 const stripe = require("stripe")(
     "sk_test_51OFXU6SJDDUS7wiVF42k1bQr5SjgEIKlK4RCo2QyAWXpZPxTFVvCEmRjPqScw86Z2YZUoOzzAt5rhFr2MVhmOQkI00uHO7oleN"
   );
@@ -77,7 +76,6 @@ app.use(cors({
 app.use(express.json());
 
 // Routes
-app.use('/', paymentRoute);
 app.use("/", routes);
 
 // Error handling middleware
@@ -101,6 +99,7 @@ const server = app.listen(PORT, async () => {
 });
 // Payment Gateway 
 
+
 app.post("/api/create-checkout-session", async (req, res) => {
     const { products } = req.body;
     console.log(products)
@@ -118,7 +117,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "http://localhost:4000/Sucess",
+      success_url: "http://localhost:5173/Success",
       cancel_url: "http://localhost:4000/Cancel",
   
     });

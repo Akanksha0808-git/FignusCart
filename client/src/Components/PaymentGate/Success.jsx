@@ -3,11 +3,12 @@ import "./payment.css"
 import {Link} from "react-router-dom"
 const Success = () => {
   return (
+   
     <div className='Payment_Contanier'>
     <div className="Sucess_Payment">
 
       <div className="Sucess_icon">
-        <img src="https://png.pngtree.com/png-clipart/20230815/original/pngtree-cashless-payment-for-groceries-2d-vector-isolated-illustration-picture-image_7950451.png" alt="" />
+        <img src="https://media0.giphy.com/media/KB8C86UMgLDThpt4WT/giphy.gif" alt="" />
       </div>
 
       <div className="sucess_message">
@@ -20,6 +21,11 @@ const Success = () => {
 
     </div>
   </div>
+  // <div className='Payment_Contanier' style={{width:"100%"}}>
+  //   <Link to={"/"} >
+  //   <img src="https://cdn.dribbble.com/users/1115047/screenshots/3447769/post-purchase-800x600.gif" />
+  //   </Link>
+  // </div>
   )
 }
 

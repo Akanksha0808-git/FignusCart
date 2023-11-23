@@ -11,11 +11,11 @@ import "./Searchbar.css"
 
 const Searchbar = () => {
   const navi =useNavigate();
-    const select = useSelector((state) => state.cart.data);
-  console.log( select)
-  const userid = localStorage.getItem("userid");
-  const filteredItems = select.filter((item) => item.user_id === userid);
-  console.log(filteredItems)
+    // const select = useSelector((state) => state.cart.data);
+  // console.log( select)
+  // const userid = localStorage.getItem("userid");
+  // const filteredItems = select.filter((item) => item.user_id === userid);
+  // console.log(filteredItems)
   const token = localStorage.getItem("token");
 
   const [name, setname] = useState("");
