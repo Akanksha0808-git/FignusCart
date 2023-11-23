@@ -1,4 +1,4 @@
-/* search box styling
+search box styling
 .parentbox {
 
   width: 100%;
@@ -148,9 +148,9 @@
     cursor: pointer;
     border: 2px sild gray;
   }
-} */
+}
 
-.navbar-brand h2{
+/* .navbar-brand h2{
   font-size: 2rem;
 }
 .navbar{
@@ -226,4 +226,4 @@
   .cart_and_Sign_In {
       gap: 8px;
   }
-}
+} */
