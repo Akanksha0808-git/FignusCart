@@ -62,7 +62,9 @@ const connection = require("./config/db");
 const cors = require("cors");
 const routes = require("./Routes/RoutesCompo");
 const paymentRoute = require('./Routes/paymentRoute');
-
+const stripe = require("stripe")(
+    "sk_test_51OFXU6SJDDUS7wiVF42k1bQr5SjgEIKlK4RCo2QyAWXpZPxTFVvCEmRjPqScw86Z2YZUoOzzAt5rhFr2MVhmOQkI00uHO7oleN"
+  );
 const app = express();
 const PORT = process.env.PORT || 4000;
 
@@ -84,6 +86,10 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something went wrong!');
 });
 
+
+
+
+
 // Start the server
 const server = app.listen(PORT, async () => {
     try {
@@ -93,3 +99,28 @@ const server = app.listen(PORT, async () => {
         console.error(err, "Error occurred due to server start");
     }
 });
+// Payment Gateway 
+
+app.post("/api/create-checkout-session", async (req, res) => {
+    const { products } = req.body;
+    console.log(products)
+    const lineItems = products.map((product) => ({
+      price_data: {
+        currency: "inr",
+        product_data: {
+          name: product.name,
+        },
+        unit_amount:product.price * 100,
+      },
+      quantity: product.quantity,
+    }));
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ["card"],
+      line_items: lineItems,
+      mode: "payment",
+      success_url: "http://localhost:4000/Sucess",
+      cancel_url: "http://localhost:4000/Cancel",
+  
+    });
+    res.json({id:session.id})
+  });

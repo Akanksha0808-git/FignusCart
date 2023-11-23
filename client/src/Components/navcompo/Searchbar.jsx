@@ -33,7 +33,7 @@ const Searchbar = () => {
           search: name,
         });
          console.log(response.data.data) 
-        setdata(response.data.data);
+       await  setdata(response.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
