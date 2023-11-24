@@ -64,6 +64,11 @@ const Searchbar = () => {
     localStorage.removeItem("email");
     
     navi("/")
+    // window.alert("Logout")
+    toast.success("Logout successful!", {
+      position: "top-center",
+      autoClose: 2000, // Close the toast after 2 seconds
+    })
   };
 
 
@@ -109,7 +114,7 @@ const Searchbar = () => {
 //         {token ? (
   // Display components for authenticated users
   <>
-    <Link onClick={handletoken} className='btn'>Logout</Link>
+    <Link onClick={handletoken } className='btn'>Logout</Link>
   </>
 ) : (
   // Display components for non-authenticated users

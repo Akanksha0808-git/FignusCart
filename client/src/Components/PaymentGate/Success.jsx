@@ -5,10 +5,10 @@ const Success = () => {
   return (
    
     <div className='Payment_Contanier'>
-    <div className="Sucess_Payment">
+    {/* <div className="Sucess_Payment"> */}
 
       <div className="Sucess_icon">
-        <img src="https://media0.giphy.com/media/KB8C86UMgLDThpt4WT/giphy.gif" alt="" />
+        <img src="https://media0.giphy.com/media/KB8C86UMgLDThpt4WT/giphy.gif" alt=""  style={{borderRadius:"50%"}} />
       </div>
 
       <div className="sucess_message">
@@ -19,8 +19,8 @@ const Success = () => {
       <p><Link to={"/"}>Click Here</Link></p>
       </div>
 
-    </div>
-  </div>
+    {/* </div> */}
+   </div>
   // <div className='Payment_Contanier' style={{width:"100%"}}>
   //   <Link to={"/"} >
   //   <img src="https://cdn.dribbble.com/users/1115047/screenshots/3447769/post-purchase-800x600.gif" />
