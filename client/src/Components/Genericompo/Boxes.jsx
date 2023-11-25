@@ -94,23 +94,14 @@ const Boxes = (props) => {
         <p className='brand_price'>MRP : <span>{price}</span></p>
       </div>
       
-        {verified ? (
-                <button className="AddToCart" onClick={() => handleClick(item)}>
-                  Add To Cart
-                </button>
-              ) : (
+      
                 <button
                   className="AddToCart"
-                  onClick={() => {
-                    notify2();
-                    setTimeout(() => {
-                      navigate("/login");
-                    }, 5000); // Adjust the delay (in milliseconds) as needed
-                  }}
+                 
                 >
                   Add To Cart
                 </button>
-              )}
+            
     </div>
   </div>
   </div>
