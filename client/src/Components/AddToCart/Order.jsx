@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment, removeItem } from "../Redux/Slice";
+import { decrement, increment, removeItem , clearCart } from "../Redux/Slice";
 import { loadStripe } from "@stripe/stripe-js";
 import {Divider} from "@mui/material"
 import { Link } from 'react-router-dom'
@@ -95,14 +95,23 @@ function Order() {
     const result = stripe.redirectToCheckout({
       sessionId: session.id,
     });
+    console.log("Stripe Checkout result:", result); 
+    console.log("Nested paymentIntent:", result.paymentIntent);
+
     if (result.error) {
       console.log("Stripe error:", result.error);
-    }else if (result.paymentIntent.status === "succeeded") {
+ 
+    }
+    else if (result.paymentIntent && result.paymentIntent.status === "succeeded") {
       console.log("Payment successful! Clearing the cart.");
       // Payment successful, clear the cart
       dispatch(clearCart());
     }
   };
+     
+  console.log("filteredItems.length:", filteredItems.length);
+  console.log("Local Storage Data:", localStorage.getItem("cartData"));
+
 
 return (
     <div className="Order_Container">
@@ -193,19 +202,7 @@ return (
 
         </div>
       )}
-{filteredItems.length === 0 && (
-      <div className="no-items-message">
-        <div className="empty-cart">
-          <img
-            src="https://cdn.dribbble.com/users/5107895/screenshots/14532312/media/a7e6c2e9333d0989e3a54c95dd8321d7.gif"
-            alt="Empty Cart"
-          />
-          <p>
-            <Link to={"/"}>Cart is Empty</Link>
-          </p>
-        </div>
-      </div>
-    )}
+
 
     </div>
   );

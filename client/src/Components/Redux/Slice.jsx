@@ -22,6 +22,7 @@ const Slice = createSlice({
       } else {
         newItem.quantity = 1;
         state.data.push(newItem);
+        // state.data = [newItem];
       }
 
       // Update localStorage whenever state is modified
@@ -60,16 +61,22 @@ const Slice = createSlice({
       // Update localStorage whenever state is modified
       localStorage.setItem("cartData", JSON.stringify(state.data));
     },
+    // clearCart: (state) => {
+    //   state.data = [];
+    // },
     clearCart: (state) => {
-      state.data = [];
+     
+        state.data = [];
+        localStorage.removeItem(localStorageData);
+   
     },
     
   },
 });
 
-// export default Slice.reducer;
-// export const { addtocart, increment, decrement, removeItem ,clearCart} = Slice.actions;
+
 const { addtocart, increment, decrement, removeItem, clearCart } = Slice.actions;
+
 
 export { addtocart, increment, decrement, removeItem, clearCart };
 

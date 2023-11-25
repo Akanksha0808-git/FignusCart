@@ -24,103 +24,6 @@ function Login() {
     setFormData({ ...formData, [name]: value });
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   console.log(formData);
-  //   //axios.post("url",inputs) to send the data to the backend data
-  //   axios.post(`https://fignuscart-ly1x.onrender.com/login`, formData)
-  //     .then((res) => {
-  //       console.log(res.data);
-  //       setdata(res.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }
-  // useEffect(() => {
-  //   if (data) {
-  //     localStorage.setItem("token", data.token);
-  //     if (data.msg === "User is LoggedIn successfully") {
-  //       alert(data.msg)
-  //       Navi("/dashboard");
-  //     }
-  //   }
-  // }, [data,Navi]);
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // const url="https://fignuscart-ly1x.onrender.com/login";
-  //   const url="http://localhost:4000/login";
-
-  //   axios
-  //     .post(url, formData)
-  //     .then((response) => {
-  //       console.log(response.data)
-  //       if (response.data.user) {
-
-  //         const email = response.data.user[0]
-  //         const token = response.data.token;
-  //         // console.log(token);
-  //         const usersid = response.data.userid;
-  //         localStorage.setItem("token", token);
-  //         localStorage.setItem("userid", usersid);
-  //         localStorage.setItem("email", email)
-  //         Navi("/");
-  //       } else {
-
-  //         toast.success(`${response.data.msg}`, {
-  //           position: "top-center"
-  //           });
-  //           console.log(response.data.msg)
-  //         setdata(response.data.msg);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error logging in:", error.message);
-
-  //       toast(`${error.message}`, {
-  //         position: "top-center"
-  //       });
-        
-  //     });
-  // };
-  
-  
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const url = "http://localhost:4000/login";
-  
-  //   axios
-  //     .post(url, formData)
-  //     .then((response) => {
-  //       console.log(response.data);
-  //       if (response.data.user) {
-  //         const email = response.data.user[0];
-  //         const token = response.data.token;
-  //         const usersid = response.data.userid;
-  //         localStorage.setItem("token", token);
-  //         localStorage.setItem("userid", usersid);
-  //         localStorage.setItem("email", email);
-  //         Navi("/");
-  
-  //         // Show success notification
-  //         toast.success("Login successful!", {
-  //           position: "top-center",
-  //           autoClose: 2000, // Close the toast after 2 seconds
-  //         });
-  //       } else {
-  //         setdata(response.data.msg);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error logging in:", error.message);
-  //       toast.error(`Error: ${error.message}`, {
-  //         position: "top-center",
-  //       });
-  //     });
-  // };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     // const url = "http://localhost:4000/login";
@@ -138,13 +41,13 @@ function Login() {
           localStorage.setItem("token", token);
           localStorage.setItem("userid", usersid);
           localStorage.setItem("email", email);
-          
+          window.alert("login Successfully")
           Navi("/"); // Redirect to the desired page
           // Show success notification
-          toast.success("Login successful!", {
-            position: "top-center",
-            autoClose: 2000, // Close the toast after 2 seconds
-          })
+          // toast.success("Login successful!", {
+          //   position: "top-center",
+          //   autoClose: 2000, // Close the toast after 2 seconds
+          // })
 
         
           
