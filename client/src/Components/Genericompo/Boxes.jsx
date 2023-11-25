@@ -10,70 +10,10 @@ import "./Boxes.css"
 import axios from "axios";
 
 const Boxes = (props) => {
-  const notify = () => toast("Item is added to the cart");
-  const notify2 = () => toast("Please log in first to add to cart.")
 
-  const navigate = useNavigate();
-
-  const [verified, setVerified] = useState(false);
-  const dispatch = useDispatch();
    
   const { heading,id,category,rating,priceDrop,price, image } = props;
 
-  const verifyToken = () => {
-    const token = localStorage.getItem("token");
-    console.log("Token:", token);
-
-    // const url = "http://localhost:4000/dashboard";
-    const url =" https://fignuscart-ly1x.onrender.com/dashboard";
-
-    if (token) {
-      axios
-        .get(url, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        })
-        .then((response) => {
-          console.log(response.data);
-          setVerified(true);
-        })
-        .catch((error) => {
-          console.error("Error fetching data:", error);
-          setVerified(false);
-        });
-    } else {
-      setVerified(false);
-    }
-  };
-
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    console.log("Token:", token);
-    verifyToken();
-  }, []); // Empty dependency array to ensure it runs only once on mount
-
-  const handleClick = (item) => {
-    const userid = localStorage.getItem("userid");
-    console.log(item.id, userid);
-
-    if (verified) {
-      dispatch(
-        addtocart({
-          user_id: userid,
-          id: item.id,
-          name: item.heading,
-          image: item.image,
-          price: item.PriceDrop,
-        })
-      );
-      notify("Item added to the cart");
-    } else {
-      console.log("User not verified. Please log in first.");
-
-      navigate("/login"); // Navigate to the login page
-    }
-  };
   return (
     <Link to={"/detailpage/" + id + heading } state={{ articleID: id, Category: category }} style={{ textDecoration: 'none' }}>
     <div className="box">

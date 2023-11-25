@@ -28,8 +28,8 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-const url="https://fignuscart-ly1x.onrender.com/register"
-// const url="http://localhost:4000/register"
+// const url="https://fignuscart-ly1x.onrender.com/register"
+const url="http://localhost:4000/register"
 
     console.log(formData);
     axios.post(url, formData)
