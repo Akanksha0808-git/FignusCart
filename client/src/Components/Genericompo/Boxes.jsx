@@ -24,7 +24,8 @@ const Boxes = (props) => {
     const token = localStorage.getItem("token");
     console.log("Token:", token);
 
-    const url = "http://localhost:4000/dashboard";
+    // const url = "http://localhost:4000/dashboard";
+    const url =" https://fignuscart-ly1x.onrender.com/dashboard";
 
     if (token) {
       axios

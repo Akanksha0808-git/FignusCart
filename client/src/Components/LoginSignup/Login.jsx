@@ -42,12 +42,7 @@ function Login() {
           localStorage.setItem("userid", usersid);
           localStorage.setItem("email", email);
           window.alert("login Successfully")
-          Navi("/"); // Redirect to the desired page
-          // Show success notification
-          // toast.success("Login successful!", {
-          //   position: "top-center",
-          //   autoClose: 2000, // Close the toast after 2 seconds
-          // })
+          Navi("/"); 
 
         
           

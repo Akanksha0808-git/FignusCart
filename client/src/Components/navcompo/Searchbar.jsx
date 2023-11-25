@@ -11,15 +11,12 @@ import "./Searchbar.css"
 
 const Searchbar = () => {
   const navi =useNavigate();
-    // const select = useSelector((state) => state.cart.data);
-  // console.log( select)
-  // const userid = localStorage.getItem("userid");
-  // const filteredItems = select.filter((item) => item.user_id === userid);
-  // console.log(filteredItems)
+ 
   const token = localStorage.getItem("token");
 
   const [name, setname] = useState("");
   const [data1, setdata] = useState([]);
+  const url =" https://fignuscart-ly1x.onrender.com/dashboard";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,7 +26,7 @@ const Searchbar = () => {
           return;
         }
 
-        const response = await axios.post("http://localhost:4000/search", {
+        const response = await axios.post( url , {
           search: name,
         });
          console.log(response.data.data) 
