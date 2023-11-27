@@ -132,8 +132,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "https://fignuscart-e-commerce.netlify.app/Success",
-      cancel_url: "https://fignuscart-e-commerce.netlify.app/Cancel",
+      success_url: "https://fignus-client.vercel.app/Success",
+      cancel_url: "https://fignus-client.vercel.app/Cancel",
   
     });
     res.json({id:session.id})
