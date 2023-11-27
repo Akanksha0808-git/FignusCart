@@ -9,7 +9,7 @@ const data=[
         details:'OnePlus 11 5G (Eternal Green, 8GB RAM, 128GB Storage)',
         rating:'★ ★ ★ ★ ★',
         price:'₹56,998',
-        PriceDrop:'-20%',
+        PriceDrop:'₹56,998',
         GetitBy:'Tommorrow,29 October',
     }
     , {
@@ -20,7 +20,7 @@ const data=[
         details:'Samsung Galaxy M14 5G (Eternal Green, 8GB RAM, 128GB',
         rating:' ★ ★ ★ ★ ★',
         price:'₹11,990',
-        PriceDrop:'-40%',
+        PriceDrop:'₹11,990',
         GetitBy:'Monday,8october',
     }
     , {
@@ -32,7 +32,7 @@ const data=[
         details:'Redmi 12 5G Moonstone Silver ',
         rating:'★ ★ ★ ★ ★',
         price:'₹11,999',
-        PriceDrop:'-25%',
+        PriceDrop:'₹11,990',
         GetitBy:'Tommorrow,29October',
     }
     , {
@@ -44,7 +44,7 @@ const data=[
         details:'Samsung Galaxy M04 Dark Blue,',
         rating:'★ ★ ★ ★ ★',
         price:'₹6,499',
-        PriceDrop:'-46%',
+        PriceDrop:'₹6,499',
         GetitBy:'Tommorrow,29October',
     }
     , {
@@ -56,7 +56,7 @@ const data=[
         details:'Redmi 12C (Matte Black, 4GB RAM, 64GB Storage)',
         rating:'★ ★ ★ ★ ★',
         price:'₹6,999',
-        PriceDrop:'-50%',
+        PriceDrop:'₹6,499',
         GetitBy:'Tommorrow,29October',
     }  , {
         id:'6',
@@ -67,7 +67,7 @@ const data=[
         details:'Oneplus Open 5G (Emerald Dusk 16GB RAM, 512GB Storage)',
         rating:'★ ★ ★ ★ ★',
         price:'₹1,39,999',
-        PriceDrop:'-7%',
+        PriceDrop:'₹1,39,999',
         GetitBy:'Tommorrow,29October',
     }  , {
         id:'7',
@@ -78,7 +78,7 @@ const data=[
         details:'Nokia G42 5G | Snapdragon® 480+ 5G ',
         rating:'★ ★ ★ ★ ★',
         price:'₹11,999',
-        PriceDrop:'-25%',
+        PriceDrop:'₹1,39,999',
         GetitBy:'Tommorrow,29October',
     } 
     , {
@@ -90,7 +90,7 @@ const data=[
         details:'itel P55 5G | Dimensity 6080 ',
         rating:'★ ★ ★ ★ ★',
         price:'₹9,999',
-        PriceDrop:'-26%',
+        PriceDrop:'₹9,999',
         GetitBy:'Tommorrow,29October',
     }   , {
         id:'9',
@@ -101,7 +101,7 @@ const data=[
         details:'Samsung Galaxy M04 Light Green',
         rating:'★ ★ ★ ★ ★',
         price:'₹6,499',
-        PriceDrop:'43%',
+        PriceDrop:'₹9,999',
         GetitBy:'Tommorrow,29October',
     }   , {
         id:'10',
@@ -112,7 +112,7 @@ const data=[
         details:'OnePlus Nord CE 3 Lite 5G ',
         rating:'★ ★ ★ ★ ★',
         price:'₹19,999',
-        PriceDrop:'20%',
+        PriceDrop:'₹19,999',
         GetitBy:'Tommorrow,29October',
     }   , {
         id:'11',
@@ -123,7 +123,7 @@ const data=[
         details:'Apple iPhone 13 (128GB) - Midnight',
         rating:'★ ★ ★ ★ ★',
         price:'₹50,499',
-        PriceDrop:'-16%',
+        PriceDrop:'₹50,499',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'12',
@@ -134,7 +134,7 @@ const data=[
         details:'Apple iPhone 15 (128 GB) - Blue',
         rating:'★ ★ ★ ★ ★',
         price:'₹79,900',
-        PriceDrop:'3%',
+        PriceDrop:'₹79,900',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'13',
@@ -145,7 +145,7 @@ const data=[
         details:'Apple iPhone 13 (128GB) - Pink',
         rating:'★ ★ ★ ★ ★',
         price:'₹50,499',
-        PriceDrop:'-16%',
+        PriceDrop:'₹50,499',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'14',
@@ -156,7 +156,7 @@ const data=[
         details:'Apple iPhone 15 Pro (1 TB) - White Titanium',
         rating:'★ ★ ★ ★ ★',
         price:'₹1,84,900',
-        PriceDrop:'-2%',
+        PriceDrop:'₹1,84,900',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'15',
@@ -167,7 +167,7 @@ const data=[
         details:'Apple iPhone 15 (128 GB) - Blue',
         rating:'★ ★ ★ ★ ★',
         price:'₹79,900',
-        PriceDrop:'-2%',
+        PriceDrop:'₹79,900',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'16',
@@ -178,7 +178,7 @@ const data=[
         details:'Apple iPhone 15 Pro Max (256 GB) - Black Titanium',
         rating:'★ ★ ★ ★ ★',
         price:'₹1,59,900',
-        PriceDrop:'-0%',
+        PriceDrop:'₹1,59,900',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'17',
@@ -189,7 +189,7 @@ const data=[
         details:'Apple iPhone 13 (128GB) - (Product) RED',
         rating:'★ ★ ★ ★ ★',
         price:'₹50,499',
-        PriceDrop:'-28%',
+        PriceDrop:'₹50,499',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'18',
@@ -200,7 +200,7 @@ const data=[
         details:'Apple iPhone 13 (128GB) - Blue',
         rating:'★ ★ ★ ★ ★',
         price:'₹50,499',
-        PriceDrop:'-16%',
+        PriceDrop:'₹50,499',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'19',
@@ -211,7 +211,7 @@ const data=[
         details:'Apple iPhone 14 Pro Max (1 TB) - Silver',
         rating:'★ ★ ★ ★ ★',
         price:'₹1,89,900',
-        PriceDrop:'-0%',
+        PriceDrop:'₹1,50,499',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'20',
@@ -222,7 +222,7 @@ const data=[
         details:'Apple iPhone 14 Pro Max (1 TB) - Gold',
         rating:'★ ★ ★ ★ ★',
         price:'₹1,89,900',
-        PriceDrop:'-0%',
+        PriceDrop:'₹1,50,499',
         GetitBy:'Tomorrow, 29 October',
     }   , {
         id:'21',
@@ -233,7 +233,7 @@ const data=[
         details:'Acer Aspire Lite 12th Gen Intel Core i3-1215U Premium Metal Laptop',
         rating:'★ ★ ★ ★ ★',
         price:'₹31,990',
-        PriceDrop:'-40%',
+        PriceDrop:'₹31,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'22',
@@ -244,7 +244,7 @@ const data=[
         details:'Dell 15 Laptop, Intel Core i5-1135G7 Processor/16GB DDR4/512GB SSD/Intel UHD Graphic/15.6" (39.562cm)',
         rating:'★ ★ ★ ★ ★',
         price:'₹48,990',
-        PriceDrop:'-26%',
+        PriceDrop:'₹31,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'23',
@@ -255,7 +255,7 @@ const data=[
         details:'HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD',
         rating:'★ ★ ★ ★ ★',
         price:'₹35,990',
-        PriceDrop:'-20%',
+        PriceDrop:'₹31,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'24',
@@ -279,7 +279,7 @@ const data=[
         details:'Apple MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit',
         rating:'★ ★ ★ ★ ★',
         price:'₹69,990',
-        PriceDrop:'-30%',
+        PriceDrop:'₹61,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'26',
@@ -291,7 +291,7 @@ const data=[
         details:'HP Laptop 15s, 12th Gen Intel Core i3-1215U, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD',
         rating:'★ ★ ★ ★ ★',
         price:'₹38,205',
-        PriceDrop:'-32%',
+        PriceDrop:'₹31,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'27',
@@ -303,7 +303,7 @@ const data=[
         details:'HP 255 G9 (840T7PA) Notebook (AMD Athlon Silver-3050U/ 4GB RAM/ 256GB SSD/DOS/ 15.6" Screen/ 1 Ye',
         rating:'★ ★ ★ ★ ★',
         price:'₹20,000 ',
-        PriceDrop:'-26%',
+        PriceDrop:'₹31,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'28',
@@ -315,7 +315,7 @@ const data=[
         details:'HP [SmartChoice] 15s, Ryzen 5-5500U, 16GB RAM/512GB SSD 15.6"(39.6 cm) FHD Laptop/Alexa Built-in/Windows',
         rating:'★ ★ ★ ★ ★',
         price:'₹41,990',
-        PriceDrop:'-29%',
+        PriceDrop:'₹41,990',
         GetitBy:'Thursday,14',
     }   , {
         id:'29',
@@ -327,7 +327,7 @@ const data=[
         details:'HP Laptop 15s, AMD Ryzen 7 5700U, 15.6-inch (39.6 cm), FHD, 16GB DDR4, 512GB SSD, AMD Radeon Graphics,',
         rating:'★ ★ ★ ★ ★',
         price:'₹48,990 ',
-        PriceDrop:'-24%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,14',
     }   , {
         id:'30',
@@ -339,7 +339,7 @@ const data=[
         details:'HP Chromebook X360,Intel Celeron N4120,14-Inch (35.6 Cm),Hd,4Gb Lpddr4,64Gb Emmc,Intel Uhd',
         rating:'★ ★ ★ ★ ★',
         price:'₹22,990',
-        PriceDrop:'-29%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'31',
@@ -351,7 +351,7 @@ const data=[
         details:'Acer [SmartChoice] One 14 Business Laptop AMD Ryzen 3 3250U Processor (8GB RAM/256GB SSD/AMD Radeon',
         rating:'★ ★ ★ ★ ★',
         price:'₹23,990',
-        PriceDrop:'-38%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'32',
@@ -363,7 +363,7 @@ const data=[
         details:'ASUS Vivobook S 15 2022, Intel Core EVO i5-12500H 12th Gen, 15.6-inch (39.62 cms) FHD, Thin & Light Lapto',
         rating:'★ ★ ★ ★ ★',
         price:'₹56,990 ',
-        PriceDrop:'-30%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'33',
@@ -375,7 +375,7 @@ const data=[
         details:'ASUS Vivobook S 15 OLED (2023), Intel Core EVO i9-13900H 13th Gen, 15.6" (39.62 cm) 2.8K 120Hz OLED,',
         rating:'★ ★ ★ ★ ★',
         price:'₹1,04,990',
-        PriceDrop:'-22%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'34',
@@ -387,7 +387,7 @@ const data=[
         details:'2023 MacBook Pro (14-inch, M3 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 1TB) - Space Grey',
         rating:'★ ★ ★ ★ ★',
         price:'₹1,89,900',
-        PriceDrop:'0%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,19',
     }   , {
         id:'35',
@@ -399,7 +399,7 @@ const data=[
         details:'ROG Zephyrus Duo 16, 16" (40.64 cm) UHD+/FHD+ 16:10 120Hz/240Hz/3ms, AMD Ryzen 9 6900HX, 16GB RTX',
         rating:'★ ★ ★ ★ ★',
         Price:'₹3,95,450',
-        PriceDrop:'0%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'36',
@@ -411,7 +411,7 @@ const data=[
         details:'Qualcomm Mac OS 9 Laptop 360 Model PR3 4GB',
         rating:'★ ★ ★ ★ ★',
         price:'₹24,499',
-        PriceDrop:'-2%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'37',
@@ -423,7 +423,7 @@ const data=[
         details:'Laptop 14s, 12th Gen Intel Core i3-1215U, 14-inch (35.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics,',
         rating:'★ ★ ★ ★ ★',
         price:'₹38,990',
-        PriceDrop:'-24%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'38',
@@ -435,7 +435,7 @@ const data=[
         details:'(Refurbished) Dell Latitude Air Laptop E7280 Intel Core i5 - 6300u Processor 6th Gen, 8 GB Ram & 512 GB SSD, 12',
         rating:'★ ★ ★ ★ ★',
         price:'₹23,990',
-        PriceDrop:'-65%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'39',
@@ -447,7 +447,7 @@ const data=[
         details:'[Smartchoice 14s, 11th Gen Intel Core i3-1125G4, 8GB RAM/256GB SSD 14"(35.6 cm) Micro-Edge, Anti-Glare,',
         rating:'★ ★ ★ ★ ★',
         price:'₹32,990',
-        PriceDrop:'-30%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'40',
@@ -458,7 +458,7 @@ const data=[
         details:'Newly Launched NBC 3S Core i3 12th Gen 1215U - (8 GB RAM 3200MHz/ 512 GB M.2 SATA SSD/Windows 11',
         rating:'★ ★ ★ ★ ★',
         price:'₹31,990',
-        PriceDrop:'-37%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday,16',
     }   , {
         id:'41',
@@ -469,7 +469,7 @@ const data=[
         details:'Apple 2022 iPad Air M1 Chip (10.9-inch/27.69 cm, Wi-Fi, 64GB) - Blue (5th Generation)',
         rating:'★ ★ ★ ★ ★',
         price:'₹50,999 ',
-        PriceDrop:'-15%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday, 16',
     }   , {
         id:'42',
@@ -480,7 +480,7 @@ const data=[
         details:'Apple 2022 10.9-inch iPad (Wi-Fi, 64GB) - Silver (10th Generation)',
         rating:'★ ★ ★ ★ ★',
         price:'₹39,900',
-        PriceDrop:'-11%',
+        PriceDrop:'₹48,990',
         GetitBy:'Thursday, 16',
     }   , {
         id:'43',
@@ -491,7 +491,7 @@ const data=[
         details:'Apple 2022 iPad Air M1 Chip (10.9-inch/27.69 cm, Wi-Fi, 64GB) - Space Gray (5th Generation)',
         rating:'★ ★ ★ ★ ★',
         price:'₹50,999 ',
-        PriceDrop:'-15%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'44',
@@ -502,7 +502,7 @@ const data=[
         details:'Apple 2022 10.9-inch iPad (Wi-Fi, 64GB) - Pink (10th Generation)',
         rating:'★ ★ ★ ★ ★',
         price:'₹39,900',
-        PriceDrop:'-11%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'45',
@@ -513,7 +513,7 @@ const data=[
         details:'Apple 2022 11-inch iPad Pro (Wi-Fi + Cellular, 128GB) - Space Grey (4th Generation)',
         rating:'★ ★ ★ ★ ★',
         price:'₹89,990',
-        PriceDrop:'-7%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'46',
@@ -524,7 +524,7 @@ const data=[
         details:'Xiaomi Pad 6| Qualcomm Snapdragon 870| 144Hz Refresh Rate| 8GB, 256GB| 2.8K+ Display (11-inch/27.81cm)|1',
         rating:'★ ★ ★ ★ ★',
         price:'₹26,999',
-        PriceDrop:'36%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'47',
@@ -535,7 +535,7 @@ const data=[
         details:'Apple 2022 iPad Air M1 Chip (10.9-inch/27.69 cm, Wi-Fi, 256GB) - Purple (5th Generation)',
         rating:'★ ★ ★ ★ ★',
         price:'₹69,999',
-        PriceDrop:'-7%',
+        PriceDrop:'₹69,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'48',
@@ -546,7 +546,7 @@ const data=[
         details:'Apple 2022 10.9-inch iPad (Wi-Fi, 64GB) - Blue (10th Generation)',
         rating:'★ ★ ★ ★ ★',
         price:'₹39,900',
-        PriceDrop:'-11%',
+        PriceDrop:'₹39,900',
         GetitBy:'Thursday, 16',
     }   , {
         id:'49',
@@ -557,7 +557,7 @@ const data=[
         details:'Apple 2022 10.9-inch iPad (Wi-Fi, 64GB) - Yellow (10th Generation)',
         rating:'★ ★ ★ ★ ★',
         price:'₹44,900 ',
-        PriceDrop:'0%',
+        PriceDrop:'₹44,900',
         GetitBy:'Thursday, 16',
     }   , {
         id:'50',
@@ -568,7 +568,7 @@ const data=[
         details:'Apple 2022 10.9-inch iPad (Wi-Fi, 256GB) - Blue (10th Generation)',
         rating:'★ ★ ★ ★ ★',
         price:'₹29,999 ',
-        PriceDrop:'15%',
+        PriceDrop:'₹29,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'51',
@@ -579,7 +579,7 @@ const data=[
         details:'Samsung Galaxy Tab S9 27.81 cm (11 inch) Dynamic AMOLED 2X Display, RAM 12 GB, ROM 256 GB',
         rating:'★ ★ ★ ★ ★',
         price:'₹83,999',
-        PriceDrop:'-11%',
+        PriceDrop:'₹83,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'52',
@@ -590,7 +590,7 @@ const data=[
         details:'Samsung Galaxy Tab S9 FE 27.69 cm (10.9 inch) Display, RAM 8 GB, ROM 256 GB Expandable, S Pen in-Box, Wi-Fi',
         rating:'★ ★ ★ ★ ★',
         price:'₹47,999 ',
-        PriceDrop:'-8%',
+        PriceDrop:'₹47,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'53',
@@ -601,7 +601,7 @@ const data=[
         details:'Galaxy Tab S7 FE 31.5 cm (12.4 inch) Large Display, S-Pen in Box, Slim Metal Body, Dolby Atmos Sound, RAM 4 GB,',
         rating:'★ ★ ★ ★ ★',
         price:'₹32,999',
-        PriceDrop:'-34%',
+        PriceDrop:'₹47,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'54',
@@ -612,7 +612,7 @@ const data=[
         details:'Galaxy Tab S6 Lite 26.31 cm (10.4 inch), S-Pen in Box, Slim and Light, Dolby Atmos Sound, 4 GB RAM, 64 GB ROM,',
         rating:'★ ★ ★ ★ ★',
         price:'₹32,999',
-        PriceDrop:'-23%',
+        PriceDrop:'₹47,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'55',
@@ -623,7 +623,7 @@ const data=[
         details:'Galaxy Tab S8 | 27.81cm (11.0") LCD Display | 4nm Processor | 8,000 mAh Battery | Dolby Atmos Quad',
         rating:'★ ★ ★ ★ ★',
         price:'₹50,999',
-        PriceDrop:'-24%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }   , {
         id:'56',
@@ -634,7 +634,7 @@ const data=[
         details:'Galaxy Tab S8 | 27.81cm (11.0") LCD Display | 4nm Processor | 8,000 mAh Battery | Dolby Atmos Quad',
         rating:'★ ★ ★ ★ ★',
         price:'₹50,999 ',
-        PriceDrop:'-24%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     } , {
         id:'57',
@@ -645,7 +645,7 @@ const data=[
         details:'Galaxy Tab A7 Lite 8.7 inches with Calling, Slim Metal Body, Dolby Atmos Sound, RAM 3 GB, ROM 32 GB',
         rating:'★ ★ ★ ★ ★',
         price:'₹12,390',
-        PriceDrop:'-29%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }  , {
         id:'58',
@@ -667,7 +667,7 @@ const data=[
         details:'Galaxy Tab A7 Lite 8.7" 32GB Android Tablet w/ Compact, Slim Design, Sturdy Metal Frame, Long Lasting Battery',
         rating:'★ ★ ★ ★ ★',
         price:'₹37,499',
-        PriceDrop:'-6%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }  , {
         id:'60',
@@ -678,7 +678,7 @@ const data=[
         details:'Galaxy Tab A8 10.5 inches Display with Calling, RAM 4 GB, ROM 64 GB Expandable, Wi-Fi+LTE Tablets, Gray, (SM-',
         rating:'★ ★ ★ ★ ★',
         price:'₹17,680',
-        PriceDrop:'-39%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }  , {
         id:'61',
@@ -689,7 +689,7 @@ const data=[
         details:'Dime Store Engineered Wood Set Top Box Stand TV Stand WiFi Router Rack Wall Shelf for Living Room Stylish Hanging Rack Organizer Home Decor Furniture (Black)',
         rating:'★ ★ ★ ★ ★',
         price:'₹475',
-        PriceDrop:'-32% ',
+        PriceDrop:'₹50,999 ',
         GetitBy:'Thursday, 16',
     }  , {
         id:'62',
@@ -700,7 +700,7 @@ const data=[
         details:'Amazon Brand - Solimo Alpha 4 Door Engineered Wood Wardrobe with Drawer (Imperial Teak Finish)',
         rating:'★ ★ ★ ★ ★',
         price:'₹19,999 ',
-        PriceDrop:'-40%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }  , {
         id:'63',
@@ -711,7 +711,7 @@ const data=[
         details:'JODHPUR CITY FURNITURE Sheesham Wood 6 Seater Dining Table with Cushioned Chairs for Living Room Dining Room Furniture Set for Home (Honey Finish)',
         rating:'★ ★ ★ ★ ★',
         price:'₹23,499',
-        PriceDrop:'-54%',
+        PriceDrop:'₹50,999',
         GetitBy:'Thursday, 16',
     }  , {
         id:'64',
@@ -722,7 +722,7 @@ const data=[
         details:'SONA ART & CRAFTS Modern Furniture Solid Sheesham Wood Dining Table 4 Seater Dining Table Set with 4 Cushion Chairs Dinner Table Set for Dinning',
         rating:'★ ★ ★ ★ ★',
         price:' ₹16,899',
-        PriceDrop:'-52%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     }  , {
         id:'65',
@@ -733,7 +733,7 @@ const data=[
         details:'Seventh Heaven Milan 3 Seater Sofa, Chenille Molfino Fabric: 3 Year Warranty (Maroon, 3 Seater)',
         rating:'★ ★ ★ ★ ★',
         price:' ₹12,999',
-        PriceDrop:'-24%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     }  , {
         id:'66',
@@ -744,7 +744,7 @@ const data=[
         details:'Stone & Beam Lambertville Fabric 3 Seater Sofa (Grey)',
         rating:'★ ★ ★ ★ ★',
         price:'₹21,599',
-        PriceDrop:'-62%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     }  , {
         id:'67',
@@ -755,7 +755,7 @@ const data=[
         details:'Amazon Brand - Solimo Selsey 3 Seater Sofa (Fabric, Sand Brown)',
         rating:'★ ★ ★ ★ ★',
         price:'₹12,999',
-        PriceDrop:'-73%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     }  , {
         id:'68',
@@ -766,7 +766,7 @@ const data=[
         details:'duroflex Avalon Fabric Single Seater Recliner (Grey, DIY)',
         rating:'★ ★ ★ ★ ★',
         price:'₹14,953',
-        PriceDrop:'-50%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     }  , {
         id:'69',
@@ -777,7 +777,7 @@ const data=[
         details:'BLUEWUD Walden Engineered Wood Study and Computer Laptop Table for Home or Office, WFH Desk, with Drawer Shelves Storage for Books and Décor Display for Adults Kids Students (Brown Maple & White)',
         rating:'★ ★ ★ ★ ★',
         price:'₹7,499',
-        PriceDrop:'-48%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     }  , {
         id:'70',
@@ -788,7 +788,7 @@ const data=[
         details:'Green Soul Venue Engineered Wood Study Table (Rolex Brown) | Computer Desk, Office Table for Students, Adults, Professionals | 1 Drawer, 1 Shelf & 1 Cabinet | Warranty Protected',
         rating:'★ ★ ★ ★ ★',
         price:'₹5,998',
-        PriceDrop:'-53%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     }  , {
         id:'71',
@@ -799,7 +799,7 @@ const data=[
         details:'Collectible India Buddha Monk Set Statue Home Decor Items Figurines Showpiece - Cute Mini Buddha Statue for Car Dashboard Table Top Diwali Home Decoration Gift Items (Type 1 Monk),Resin',
         rating:'★ ★ ★ ★ ★',
         price:' ₹199',
-        PriceDrop:'-30%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     }, {
         id:'72',
@@ -810,7 +810,7 @@ const data=[
         details:'eCraftIndia Antique Music Decorative Canon Brass Showpiece (10 cm x 10 cm x 23.75 cm, Red and Brown)',
         rating:'★ ★ ★ ★ ★',
         price:'₹269',
-        PriceDrop:'-30%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     } , {
         id:'73',
@@ -821,7 +821,7 @@ const data=[
         details:'HC VILLA Handicrafts Villa Ceramic Smoke Backflow Incense Holder Decorative Showpiece With 10 Scented Cone Incenses (Blue) (Conical)',
         rating:'★ ★ ★ ★ ★',
         price:' ₹194',
-        PriceDrop:'-73%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     } , {
         id:'74',
@@ -832,7 +832,7 @@ const data=[
         details:'PREK Seven Chakra Crystals and Gemstones, Seven Chakra Crystal Tree Showpiece for Good Luck Home Decor Item Bonsai Money Tree Plant Gift Item Figurine Standard Size - Multicolor, 1 Piece',
         rating:'★ ★ ★ ★ ★',
         price:'₹599',
-        PriceDrop:'-40%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     } , {
         id:'75',
@@ -843,7 +843,7 @@ const data=[
         details:'LIZARUGS Hand Tufted Modern Latest Tiles Design Home Carpet Multi Colour (2X8 FEET)',
         rating:'★ ★ ★ ★ ★',
         price:'₹3,390',
-        PriceDrop:'-35%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     } , {
         id:'76',
@@ -854,7 +854,7 @@ const data=[
         details:'Vintage Clock Iron Hand-Crafted Large Brass Colour Wall Clock (60 x 60 cm)',
         rating:'★ ★ ★ ★ ★',
         price:'₹2,599',
-        PriceDrop:'-75%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     } , {
         id:'77',
@@ -865,7 +865,7 @@ const data=[
         details:'Artvibes Padharo Sa Wooden Wall Hanger | Gifts | Bedroom | Decoration Items for Home | Mdf Wall Decoration for Living Room | Artworks Wall Hangings | Modern Decor Items (WH_7601N)',
         rating:'★ ★ ★ ★ ★',
         price:' ₹229',
-        PriceDrop:'-77%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     } , {
         id:'78',
@@ -876,7 +876,7 @@ const data=[
         details:'INDULGE HOMES - White Vase/Flower Vase/Pampas Grass Vase/Ceramic Vase/Round Shaped Vase/Home Decor Centrepiece/Decor Showpiece Donut Vase 6 & 8 Inches (Pack of 2)',
         rating:'★ ★ ★ ★ ★',
         price:' ₹759',
-        PriceDrop:'-62%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     } , {
         id:'79',
@@ -887,7 +887,7 @@ const data=[
         details:'Xtore Lucky Swan Couple Piano Finish Ceramic Figures for Home Decor (Set of 2 Pc, Large, White & Red)',
         rating:'★ ★ ★ ★ ★',
         price:'₹808',
-        PriceDrop:'-80%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     } , {
         id:'80',
@@ -898,7 +898,7 @@ const data=[
         details:'KAAHIRA Handmade Cotton Macrame Cushion Pillow Cover Boho Home Decor Abstract Pattern 16 x 16 Inch in Off White Color - 1 Pcs',
         rating:'★ ★ ★ ★ ★',
         price:'₹331',
-        PriceDrop:'-77%',
+        PriceDrop:'₹16,899',
         GetitBy:'Thursday, 16',
     } , {
         id:'81',
@@ -909,7 +909,7 @@ const data=[
         details:'PINNAZ INTERNATIONAL Glass Serving Bowl with Lid Oven Microwave Safe Casserole | Vessel for Curry Kitchen Server Ware| Mixing Pottery for Snacks Cake Cereal Rice Sambar | (Transparent) (1600ML)',
         rating:'★ ★ ★ ★ ★',
         price:'₹1,225',
-        PriceDrop:'-53%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     }, {
         id:'82',
@@ -920,7 +920,7 @@ const data=[
         details:'amazon basics Aluminium Non-Stick Black Cookware Set - 15 Piece',
         rating:'★ ★ ★ ★ ★',
         price:' ₹3,499',
-        PriceDrop:'-60%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     } , {
         id:'83',
@@ -931,7 +931,7 @@ const data=[
         details:'Pigeon by Stovekraft Mio Nonstick Aluminium Cookware Gift Set, Includes Nonstick Flat Tawa, Nonstick Fry Pan, Kitchen Tool Set, Kadai with Glass Lid, 8 Pieces Non-Induction Base Kitchen Set - Red',
         rating:'★ ★ ★ ★ ★',
         price:'₹999',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     } , {
         id:'84',
@@ -942,7 +942,7 @@ const data=[
         details:'Attro Lunchmate Stainless Steel Airtight Leak-Proof Lunch Box for Office, School, Picnic, 800 ml - Green',
         rating:'★ ★ ★ ★ ★',
         price:'₹429',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     } , {
         id:'85',
@@ -953,7 +953,7 @@ const data=[
         details:'Butterfly EKN 1.5-Litre Electric Kettle (Silver with Black)',
         rating:'★ ★ ★ ★ ★',
         price:' ₹549',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     } , {
         id:'86',
@@ -964,7 +964,7 @@ const data=[
         details:'Cello Checkers Pet Plastic Airtight Canister Set | Food grade and BPA free canisters | Durable & Shatterproof Body |Air tight seal & Stackable | Free from any kind of odor | Transparent | 300ml x 6, 650ml x 6, 1200 x 6, Set of 18',
         rating:'★ ★ ★ ★ ★',
         price:'₹449',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     } , {
         id:'87',
@@ -975,7 +975,7 @@ const data=[
         details:'Ganesh Multipurpose Plastic Vegetable Chopper Cutter 3 Blades for Effortlessly Chopping Vegetables and Fruits for Your Kitchen, Pool Green (725 ml)',
         rating:'★ ★ ★ ★ ★',
         price:' ₹139',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     } , {
         id:'88',
@@ -986,7 +986,7 @@ const data=[
         details:'CAROTE Non Stick Cookware Set, Induction Set Combo, Set of 4(24cm Fry Pan, 16cm Saucepan, 24cm Sauce Pot, 28cm Biryani Pot, 16cm Lid, 24cm Lid, 28cm LidGreen)',
         rating:'★ ★ ★ ★ ★',
         price:'₹4,299',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     } , {
         id:'89',
@@ -997,7 +997,7 @@ const data=[
         details:'Cello Opalware Dazzle Series Tropical Lagoon Dinner Set, 18 Units | Opal Glass Dinner Set for 6 | Light-Weight, Daily Use Crockery Set for Dining | White Plate and Bowl Set',
         rating:'★ ★ ★ ★ ★',
         price:' ₹949',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     } , {
         id:'90',
@@ -1008,7 +1008,7 @@ const data=[
         details:'Amazon Brand - Solimo Slim Stainless Steel Water Bottle, Set of 3, 1 L Each',
         rating:'★ ★ ★ ★ ★',
         price:'₹529',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     }, {
         id:'91',
@@ -1019,7 +1019,7 @@ const data=[
         details:'SUGAR Play Be Boujee Powder Blush',
         rating:'★ ★ ★ ★ ★',
         price:'₹499',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     }, {
         id:'92',
@@ -1030,7 +1030,7 @@ const data=[
         details:'Love Earth Multipot Lip and Cheek Tint',
         rating:'★ ★ ★ ★ ★',
         price:'₹229',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     }, {
         id:'93',
@@ -1041,7 +1041,7 @@ const data=[
         details:'Pipa Bella by Nykaa Fashion Badass Black',
         rating:'★ ★ ★ ★ ★',
         price:'₹697',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     }, {
         id:'94',
@@ -1052,7 +1052,7 @@ const data=[
         details:'Royal Son Butterfly Uv Protection Women Sunglasses Black Len',
         rating:'★ ★ ★ ★ ★',
         price:'₹664',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     }, {
         id:'95',
@@ -1063,7 +1063,7 @@ const data=[
         details:'Nykaa Cosmetics Matte Luxe Lipstick',
         rating:'★ ★ ★ ★ ★',
         price:'₹552',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     }, {
         id:'96',
@@ -1074,7 +1074,7 @@ const data=[
         details:'Urban Decay Vice Lipstick',
         rating:'★ ★ ★ ★ ★',
         price:'₹2200',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,225',
         GetitBy:'Thursday, 16',
     }, {
         id:'97',
@@ -1085,7 +1085,7 @@ const data=[
         details:'Maybelline New York Fit Me Matte + Poreless Powder',
         rating:'★ ★ ★ ★ ★',
         price:'₹440',
-        PriceDrop:'-30%',
+        PriceDrop:'₹440',
         GetitBy:'Thursday, 16',
     }, {
         id:'98',
@@ -1096,7 +1096,7 @@ const data=[
         details:'M.A.C Studio Fix Powder Plus Foundation - NC42',
         rating:'★ ★ ★ ★ ★',
         price:'₹3300',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     } , {
         id:'99',
@@ -1107,7 +1107,7 @@ const data=[
         details:'Fulgurant White Crystal Necklace For Women -',
         rating:'★ ★ ★ ★ ★',
         price:'₹3,444',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     } , {
         id:'100',
@@ -1118,7 +1118,7 @@ const data=[
         details:'Elan Necklace Rose Gold Stainless Steel (316L) And Ros',
         rating:'★ ★ ★ ★ ★',
         price:'₹4,199',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     }, {
         id:'101',
@@ -1129,7 +1129,7 @@ const data=[
         details:'Sukkhi Exotic Oxidised Pearl Chandelier Earring For Women (SKR56889)',
         rating:'★ ★ ★ ★ ★',
         price:'₹510',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     }, {
         id:'102',
@@ -1140,7 +1140,7 @@ const data=[
         details:'Latest Stylish Fancy Oxidised Silver Tribal Necklace Jeweller',
         rating:'★ ★ ★ ★ ★',
         price:'₹299',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     }, {
         id:'103',
@@ -1151,7 +1151,7 @@ const data=[
         details:'Priyaasi Geometric Design American Diamond Earrings for Women | Stylish Drop Look | Silver-Plated Earrings for Girls | Ethnic Wear | Gift for Women & Girls',
         rating:'★ ★ ★ ★ ★',
         price:' ₹389',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     }, {
         id:'104',
@@ -1162,7 +1162,7 @@ const data=[
         details:'CHERRY WONDERS Purple Square Crystal Rhinestone Earrings Elegant - Geometric Diamond Earrings Women',
         rating:'★ ★ ★ ★ ★',
         price:'₹299',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     }, {
         id:'105',
@@ -1173,7 +1173,7 @@ const data=[
         details:'DISHIS Womenand Garnet RedDiamond DropEarrings',
         rating:'★ ★ ★ ★ ★',
         price:'₹11,451',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     }, {
         id:'106',
@@ -1184,7 +1184,7 @@ const data=[
         details:'Diamond Silver Plated Alloy Necklace Set with Earrings For women',
         rating:'★ ★ ★ ★ ★',
         price:'₹245 ',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     }, {
         id:'107',
@@ -1195,7 +1195,7 @@ const data=[
         details:'Engage Verona Perfume for Women, Long Lasting, Citrus and Fruity, for Everyday Use, Gift for Women, Free Tester with pack, 100ml',
         rating:'★ ★ ★ ★ ★',
         price:' ₹300',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     } , {
         id:'108',
@@ -1206,7 +1206,7 @@ const data=[
         details:'Park Avenue Perfume For Men, Euphoria, 100ml Eau De Parfum, Premium, Long Lasting, Intense Fragrance Spray, Suitable For Every Occasion',
         rating:'★ ★ ★ ★ ★',
         price:'₹374',
-        PriceDrop:'-30%',
+        PriceDrop:'₹3300',
         GetitBy:'Thursday, 16',
     } , {
         id:'109',
@@ -1217,7 +1217,7 @@ const data=[
         details:'Park Avenue Harmony – Eau De Parfum Men, 100ml | Perfume for Men | Premium Luxury Fragrance Scent | Long-lasting Aroma Perfume',
         rating:'★ ★ ★ ★ ★',
         price:'₹374',
-        PriceDrop:'-30%',
+        PriceDrop:'₹2300',
         GetitBy:'Thursday, 16',
     } , {
         id:'110',
@@ -1228,7 +1228,7 @@ const data=[
         details:'Wild Stone Hydra Energy Premium Eau De Parfum for Men, 100ml|Long Lasting Perfume|Luxury Perfume for Men',
         rating:'★ ★ ★ ★ ★',
         price:' ₹287',
-        PriceDrop:'-30%',
+        PriceDrop:'₹2300',
         GetitBy:'Thursday, 16',
     } , {
         id:'111',
@@ -1239,7 +1239,7 @@ const data=[
         details:'NikeCasual Women Combo',
         rating:'★ ★ ★ ★ ★',
         price:'₹629',
-        PriceDrop:'-30%',
+        PriceDrop:'₹2300',
         GetitBy:'Thursday, 16',
     } , {
         id:'112',
@@ -1250,7 +1250,7 @@ const data=[
         details:'ST.FONTPerfume Combo Of TalkMe-Sandal- Pleasame (Pack of 3)',
         rating:'★ ★ ★ ★ ★',
         price:'₹249',
-        PriceDrop:'-30%',
+        PriceDrop:'₹2300',
         GetitBy:'Thursday, 16',
     } , {
         id:'113',
@@ -1261,7 +1261,7 @@ const data=[
         details:'Bella Vita Luxury PerfumesGift Set For Women(80ml)',
         rating:'★ ★ ★ ★ ★',
         price:'₹535',
-        PriceDrop:'-30%',
+        PriceDrop:'₹2300',
         GetitBy:'Thursday, 16',
     } , {
         id:'114',
@@ -1272,7 +1272,7 @@ const data=[
         details:'Moi By Nykaa Eau de Perfume',
         rating:'★ ★ ★ ★ ★',
         price:'₹1800',
-        PriceDrop:'-30%',
+        PriceDrop:'₹2300',
         GetitBy:'Thursday, 16',
     }, {
         id:'115',
@@ -1283,7 +1283,7 @@ const data=[
         details:'DailyObjects Orbis Round Sling Crossbody Bag For Women| Beautiful Print Vegan Leather Purse With Slip Pocket Inside| Zip Closure & Adjustable Strap| Storage Space For Essentials',
         rating:'★ ★ ★ ★ ★',
         price:' ₹1,099',
-        PriceDrop:'-50%',
+        PriceDrop:'₹1,099',
         GetitBy:'Thursday, 16',
     }, {
         id:'116',
@@ -1294,7 +1294,7 @@ const data=[
         details:"LAPIS O LUPO Women'sHandbag andSling Bag Combo (Black) (Set of 2)",
         rating:'★ ★ ★ ★ ★',
         price:'₹439',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,099',
         GetitBy:'Thursday, 16',
     }   , {
         id:'117',
@@ -1305,7 +1305,7 @@ const data=[
         details:'LAPIS O LUPO Women Fashion Synthetic Leather Handbags Shoulder Bag and Sing bag 2pcs Set',
         rating:'★ ★ ★ ★ ★',
         price:' ₹615',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,099',
         GetitBy:'Thursday, 16',
     }   , {
         id:'118',
@@ -1315,8 +1315,8 @@ const data=[
         heading:"Leather Women Handbags",
         details:'INOVERA Faux Leather Women Handbags Shoulder Hobo Bag Purse With Long Strap (Black) (Brown)',
         rating:'★ ★ ★ ★ ★',
-        price:'',
-        PriceDrop:'-30%',
+        price:'₹1,099',
+        PriceDrop:'₹1,099',
         GetitBy:'Thursday, 16',
     }   , {
         id:'119',
@@ -1327,7 +1327,7 @@ const data=[
         details:'DANIEL CLARK Handbags For Women Combo',
         rating:'★ ★ ★ ★ ★',
         price:' ₹489',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,099',
         GetitBy:'Thursday, 16',
     }   , {
         id:'120',
@@ -1338,7 +1338,7 @@ const data=[
         details:'Grace Solid Tote Bag for Women with Adjustable &',
         rating:'★ ★ ★ ★ ★',
         price:'₹2,484',
-        PriceDrop:'-30%',
+        PriceDrop:'₹1,099',
         GetitBy:'Thursday, 16',
     }   , {
         id:'121',
@@ -1349,7 +1349,7 @@ const data=[
         details:'Brand: Amazon Brand - Eden & IvyAmazon Brand - Eden & Ivy WomenHandbag',
         rating:'★ ★ ★ ★ ★',
         price:' ₹669',
-        PriceDrop:'-65%',
+        PriceDrop:'₹1,099',
         GetitBy:'Thursday, 16',
     }   , {
         id:'122',
@@ -1360,7 +1360,7 @@ const data=[
         details:'MIRAGGIO Kathy Hobo bag',
         rating:'★ ★ ★ ★ ★',
         price:'₹2324',
-        PriceDrop:'34% Off',
+        PriceDrop:'₹1,099',
         GetitBy:'Thursday, 16',
     }            
 ]
