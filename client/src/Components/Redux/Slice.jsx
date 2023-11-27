@@ -3,7 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 // Create a function to initialize the state, either from localStorage or with an empty array
 const initializeState = () => {
   const localStorageData = localStorage.getItem("cartData");
+
   console.log("localStorageData:", localStorageData);
+
   return localStorageData ? JSON.parse(localStorageData) : [];
 };
 
