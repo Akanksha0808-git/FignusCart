@@ -132,8 +132,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "https://fignus-client.vercel.app/Success",
-      cancel_url: "https://fignus-client.vercel.app/Cancel",
+      success_url: "http://localhost:5173/Success",
+      cancel_url: "http://localhost:4000/Cancel",
   
     });
     res.json({id:session.id})
