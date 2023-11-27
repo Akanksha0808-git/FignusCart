@@ -104,8 +104,8 @@ function Order() {
     }
     else if (result.paymentIntent && result.paymentIntent.status === "succeeded") {
       console.log("Payment successful! Clearing the cart.");
-      // Payment successful, clear the cart
-      dispatch(clearCart());
+      dispatch(clearCart()); // Make sure to use the correct action from the import statement
+      localStorage.removeItem("cartData");
     }
   };
      
