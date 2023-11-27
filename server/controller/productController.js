@@ -1,10 +1,10 @@
 const Products = require("../model/productSchema")
-const data=require("../Data")
+// const data=require("../Data")
 
 
 const allproducts = async (req, res)=>{
     try{
-        const productsData = await Products.create(data)
+        const productsData = await Products.find()
         // console.log(productsData)
         res.status(201).send(productsData)
     }catch(err){

@@ -73,7 +73,7 @@ const searchproduct = async (req, res) => {
   
     try {
         const search = req.body.search;
-    
+        console.log(search)
         const searching = await Products.find({
           $or: [
             { heading: { $regex: new RegExp(search, "i") } },

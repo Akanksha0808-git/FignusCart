@@ -67,10 +67,13 @@ background-size: cover;
 }
 @media screen  and (max-width: 923px){
 .navbar-light{
-    width: 500px;
+    width:100px;
    display: flex;
    justify-content: flex-end;
 }
+.left-message{
+    display: none;
+ }
 }
 @media screen  and (max-width: 519px){
     .left-message{

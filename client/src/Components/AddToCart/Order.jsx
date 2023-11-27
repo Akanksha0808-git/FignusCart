@@ -83,7 +83,7 @@ function Order() {
       "Content-Type": "application/json",
     };
     const response = await fetch(
-      "http://localhost:4000/api/create-checkout-session",
+      "https://fignuscart-ly1x.onrender.com/api/create-checkout-session",
       {
         method: "POST",
         headers: headers,

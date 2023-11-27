@@ -75,6 +75,9 @@
     font-weight: 600;
     color: #2f3640;
 }
+.AddToCart{
+    margin-top: 130px;
+}
 .Card_Content button{
     border: none;
     outline: none;

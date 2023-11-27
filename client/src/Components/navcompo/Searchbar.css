@@ -1,4 +1,4 @@
-search box styling
+/* search box styling */
 .parentbox {
 
   width: 100%;
@@ -98,7 +98,7 @@ search box styling
 
 }
 
-@media (max-width: 1176px) {
+@media (max-width: 1376px) {
   .parentbox {
     justify-content: center;
     gap: 20px;
@@ -109,10 +109,11 @@ search box styling
     margin-top: 50px;
   }
 
-  .searchbox {
-    margin-top: 60px;
+  .searchbox input {
+    /* margin-top: 60px; */
+    width:110px ;
   }
-
+ 
 }
 
 .navbar {

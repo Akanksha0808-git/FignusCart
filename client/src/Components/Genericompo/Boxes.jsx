@@ -36,7 +36,7 @@ const Boxes = (props) => {
       
       
                 <button
-                  className="AddToCart"
+                  className="ToCart"
                  
                 >
                   Add To Cart

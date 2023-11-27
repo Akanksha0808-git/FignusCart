@@ -16,7 +16,7 @@ const Searchbar = () => {
 
   const [name, setname] = useState("");
   const [data1, setdata] = useState([]);
-  const url =" https://fignuscart-ly1x.onrender.com/dashboard";
+  const url =" https://fignuscart-ly1x.onrender.com/search";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -88,10 +88,10 @@ const Searchbar = () => {
         </button>
       </form>
 
-      <div className="list" style={{color:"black", backgroundColor:"yellow"}}>
+      <div className="list">
         {data1.length >0 ? (
           <ul>
-            {data1.slice(0, 5).map((item, index) => (
+            {data1.slice(0, 10).map((item, index) => (
               <Link
                         to={"/detailpage/" + item.id }
                         onClick={handleLinkClick}
@@ -108,7 +108,7 @@ const Searchbar = () => {
         )}
       </div>
       //         <div className="Sign_In">
-//         {token ? (
+        {token ? (
   // Display components for authenticated users
   <>
     <Link onClick={handletoken } className='btn'>Logout</Link>

@@ -57,7 +57,7 @@
 
 const express = require('express');
 require("dotenv").config();
-
+const datacreation=require('./datacreation')
 const connection = require("./config/db");
 const cors = require("cors");
 const routes = require("./Routes/RoutesCompo");
@@ -89,14 +89,29 @@ app.use((err, req, res, next) => {
 
 
 // Start the server
-const server = app.listen(PORT, async () => {
-    try {
-        await connection();
-        console.log(`Server started after making connection on port ${PORT}`);
-    } catch (err) {
-        console.error(err, "Error occurred due to server start");
-    }
-});
+// const server = app.listen(PORT, async () => {
+//     try {
+//         await connection();
+//         console.log(`Server started after making connection on port ${PORT}`);
+//     } catch (err) {
+//         console.error(err, "Error occurred due to server start");
+//     }
+// });
+const startConnection = async ()=>{
+  try{
+      await connection()
+      app.listen(PORT, () => {
+          console.log(`Server is Runing on http://localhost:${PORT}`)
+      })
+     datacreation()
+      
+  }
+  catch(err){
+      console.log(`Database is showing Error ${err.message}`)
+  }
+}
+
+startConnection()
 // Payment Gateway 
 
 
