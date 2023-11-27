@@ -75,22 +75,25 @@
     font-weight: 600;
     color: #2f3640;
 }
-.AddToCart{
+.ToCart{
     margin-top: 130px;
 }
 .Card_Content button{
+    /* margin-top: 20px; */
     border: none;
     outline: none;
     width: 150px;
     height: 40px;
     border-radius: 10px;
     background-color:  #E80071;
+    /* background-color:  #00e80c; */
+
     color: white;
     position: absolute;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    bottom: -33px;
+    bottom: -44px;
     font-weight: 600;
 }
 .Card_Content button:hover{
@@ -107,9 +110,7 @@
     .brand_price{
         line-height: 15px;
     }
-    .Card_Content button{
-        
-    }
+   
 }
 @media screen and (max-width : 555px) {
     .productCard{

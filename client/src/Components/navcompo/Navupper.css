@@ -60,11 +60,7 @@ background-size: cover;
 
 
 }
-@media screen and (min-width: 320px) and (max-width: 423px){
-.navbar-light{
 
-}
-}
 @media screen  and (max-width: 923px){
 .navbar-light{
     width:100px;
