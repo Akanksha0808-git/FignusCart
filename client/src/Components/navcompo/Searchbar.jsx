@@ -83,7 +83,7 @@ const Searchbar = () => {
           aria-label="Search"
           onChange={handleChange}
         />
-        <button type="submit" onClick={handleSubmit}>
+        <button className="serachbtn" type="submit" onClick={handleSubmit}>
         <FontAwesomeIcon icon={faSearch} />
         </button>
       </form>
@@ -107,7 +107,9 @@ const Searchbar = () => {
          null
         )}
       </div>
-      //         <div className="Sign_In">
+      </div>
+
+              <div className="Sign_In">
         {token ? (
   // Display components for authenticated users
   <>
@@ -118,7 +120,6 @@ const Searchbar = () => {
   <Link to={"/login"} className='btn'>SignIn</Link>
 )}
         </div>
-      </div>
     </div>
   );
 };

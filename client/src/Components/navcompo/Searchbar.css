@@ -7,25 +7,23 @@
   gap: 10px;
 }
 
-.searchbox {
-  position: relative;
-  margin-top: 48px;
-
-
+.Sign_In{
+  margin-top: 45px;
 }
 .Search{
-  width: 40%;
+  width: 100%;
   margin: auto;
   position: absolute;
   z-index: 10;
   top: 70px;
   right: 10px;
 }
-.searchbar{
+
+/* .searchbar{
   position: sticky;
   top: 0;
   z-index: 11;
-}
+} */
 .list{
   position: absolute;
   z-index: 99;
@@ -39,22 +37,36 @@
   font-weight: 500;
   color: #394657;
 }
+.searchbox {
+  /* position: relative; */
+  height: 40px;
+  width: 100%;
+  margin-top: 48px;
+  /* background-color: yellow; */
 
-.serachicon {
-  color: gray;
-  position: absolute;
-  top: 5px;
-  left: 240px;
-  cursor: pointer;
-  border: 2px sild gray;
+
 }
+
+
 
 .search {
-  height: 25px;
-  width: 260px;
+  /* position: relative; */
+  border-radius: 20px;
+  height: 35px;
+  width: 400px;
 }
-.btn {
+.serachbtn{
+  /* position: absolute; */
+  font-size: 20px;
+  /* margin-top: 20px; */
+  top: 7px;
+  right: 110px;
+  background-color: white;
+  border: none;
+}
 
+.btn {
+/* margin-top: 120px; */
   height: 50px;
   width: 70px;
  
@@ -98,7 +110,7 @@
 
 }
 
-@media (max-width: 1376px) {
+/* @media (max-width: 1376px) {
   .parentbox {
     justify-content: center;
     gap: 20px;
@@ -110,8 +122,20 @@
   }
 
   .searchbox input {
-    /* margin-top: 60px; */
-    width:110px ;
+    width:210px ;
+  }
+ 
+} */
+
+@media (max-width: 1476px) {
+  .parentbox {
+    justify-content: center;
+    gap: 20px;
+  }
+
+
+  .searchbox input {
+    width:270px ;
   }
  
 }
@@ -134,8 +158,106 @@
   font-weight: 500;
   color: #ca1274;
 }
-
-@media (max-width: 436px) {
+@media (max-width: 1476px) {
+  .searchbox input {
+    width:170px ;
+  }
+}
+@media (max-width: 1212px) {
+  .searchbox input {
+    width:120px ;
+  }
+}
+@media (max-width: 1176px) {
+  .searchbox input {
+    width:520px ;
+    margin-left: 150px;
+  }
+  .btn{
+   
+    margin-right: 70px;
+  }
+}
+@media (max-width: 989px) {
+  .searchbox input {
+    width:360px ;
+    margin-left: 150px;
+  }
+  .btn{
+   
+    margin-right: 70px;
+  }
+}
+@media (max-width: 838px) {
+  .searchbox input {
+    width:300px ;
+    margin-left: 120px;
+  }
+  .btn{
+   
+    margin-right: 70px;
+  }
+}
+@media (max-width: 734px) {
+  .searchbox input {
+    width:200px ;
+    margin-left: 60px;
+  }
+  .btn{
+   
+    margin-right: 70px;
+  }
+}
+@media (max-width: 569px) {
+  .searchbox input {
+    width:100px ;
+    margin-left: 60px;
+  }
+  .btn{
+   
+    margin-right: 70px;
+  }
+}
+@media (max-width: 460px) {
+  .searchbox input {
+    width:50px ;
+margin-left: 40px;
+   /* display: none; */
+  }
+  .serachbtn{
+    /* margin-left: 120px; */
+  }
+  
+  .btn{
+   
+    margin-right: 70px;
+  }
+}
+@media (max-width: 400px) {
+  .searchbox input {
+  
+   display: none;
+  }
+  .serachbtn{
+    margin-left: 120px;
+  }
+  
+  .btn{
+   
+    margin-right: 70px;
+  }
+}
+/* @media (max-width: 680px) {
+  .searchbox input {
+    width:300px ;
+    margin-left: 60px;
+  }
+  .btn{
+   
+    margin-right: 70px;
+  }
+} */
+/* @media (max-width: 436px) {
   .searchbox input {
     display: none;
 
@@ -149,7 +271,15 @@
     cursor: pointer;
     border: 2px sild gray;
   }
-}
+} */
+
+
+
+
+
+
+
+
 
 /* .navbar-brand h2{
   font-size: 2rem;

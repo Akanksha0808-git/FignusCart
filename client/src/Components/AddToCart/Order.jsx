@@ -105,12 +105,12 @@ function Order() {
     else if (result.paymentIntent && result.paymentIntent.status === "succeeded") {
       console.log("Payment successful! Clearing the cart.");
       dispatch(clearCart()); // Make sure to use the correct action from the import statement
-      localStorage.removeItem("cartData");
     }
   };
+  localStorage.removeItem("cartData");
      
-  console.log("filteredItems.length:", filteredItems.length);
-  console.log("Local Storage Data:", localStorage.getItem("cartData"));
+  // console.log("filteredItems.length:", filteredItems.length);
+  // console.log("Local Storage Data:", localStorage.getItem("cartData"));
 
 
 return (

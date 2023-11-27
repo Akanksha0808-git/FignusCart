@@ -15,9 +15,10 @@ background-size: cover;
 /* background-color: aqua; */
 }
 .navbar-light{
-    width: 900px;
+    width: 80%;
    display: flex;
    justify-content: flex-end;
+   /* margin-right: 120px; */
 }
 .left-message a{
     position:absolute;
@@ -60,9 +61,8 @@ background-size: cover;
 
 }
 @media screen and (min-width: 320px) and (max-width: 423px){
-.left-message{
-    font-size: 3px;
-    background-color: yellow;
+.navbar-light{
+
 }
 }
 @media screen  and (max-width: 923px){
@@ -76,7 +76,14 @@ background-size: cover;
  }
 }
 @media screen  and (max-width: 519px){
-    .left-message{
+    /* .left-message{
        display: none;
+    } */
+    .navbar-light{
+        width: 100%;
+        /* background-color: blue; */
+        display: flex;
+       margin-top: 22px;
+       justify-content: flex-end;
     }
     }
