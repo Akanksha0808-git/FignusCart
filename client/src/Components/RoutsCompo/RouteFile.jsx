@@ -62,8 +62,8 @@ const RouteFile = () => {
           {/* <PayPalScriptProvider> */}
           <Route path="/order" element={<Order />} />
           {/* </PayPalScriptProvider> */}
-          <Route path="/Success" element={<Success />} />
-          <Route path="/Cancel" element={<Cancel />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/cancel" element={<Cancel />} />
 
 
 
